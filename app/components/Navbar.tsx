@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
-import { NavItems, PHONE_NUMBER } from "../constants";
+import { NavItems, PHONE_NUMBER } from "../../constants";
 
 function AnimatedUnderline({
   isHovered,
