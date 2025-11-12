@@ -6,7 +6,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/Navbar";
@@ -46,7 +45,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main>
         <Outlet />
       </main>
     </>

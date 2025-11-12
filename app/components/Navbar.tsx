@@ -18,7 +18,7 @@ function AnimatedUnderline({
     <motion.div
       className={clsx(
         "absolute bottom-1 left-0 right-0 h-0.5 origin-left",
-        scrolled ? "bg-white" : "bg-foreground"
+        scrolled ? "bg-white" : "bg-brand-600"
       )}
       initial={{ scaleX: isActive ? 1 : 0 }}
       animate={{ scaleX: isActive ? 1 : isHovered ? 1 : 0 }}
@@ -217,11 +217,11 @@ export default function Navbar() {
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled
           ? "bg-brand-600/95 backdrop-blur supports-backdrop-filter:bg-brand-600/85 shadow"
-          : "bg-transparent"
+          : "bg-white"
       )}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -230,9 +230,9 @@ export default function Navbar() {
           >
             <Link to="/" className="flex items-center gap-2">
               <motion.img
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Logo"
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain p-1.5"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
