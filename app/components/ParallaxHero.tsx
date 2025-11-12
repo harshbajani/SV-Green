@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Recycle, Shield, Heart, Award } from "lucide-react";
+import SplitText from "./react-bits/SplitText";
 
 interface Props {
   mediaSrc: string;
@@ -63,7 +64,18 @@ export function ParallaxHero({
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold mb-4"
           >
-            {title}
+            <SplitText
+              text={title}
+              delay={80}
+              duration={0.8}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 50, rotateX: -90 }}
+              to={{ opacity: 1, y: 0, rotateX: 0 }}
+              threshold={0.1}
+              rootMargin="0px"
+              textAlign="center"
+            />
           </motion.h1>
           {subtitle && (
             <motion.p
@@ -72,7 +84,18 @@ export function ParallaxHero({
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-200"
             >
-              {subtitle}
+              <SplitText
+                text={subtitle}
+                delay={80}
+                duration={0.8}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 50, rotateX: -90 }}
+                to={{ opacity: 1, y: 0, rotateX: 0 }}
+                threshold={0.1}
+                rootMargin="0px"
+                textAlign="center"
+              />
             </motion.p>
           )}
         </div>
