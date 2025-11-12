@@ -139,3 +139,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: #344e41;
+  background: #dad7cd;
+}
+
+::selection {
+  color: #344e41;
+  background: #dad7cd;
+}
