@@ -46,8 +46,8 @@ const HazardousWastePage = () => {
         item={benefits}
       />
       <RecycleHub
-        title="Why Recycling hub for Hazardous Waste Disposal?"
-        description=" Recycling Hub is a trustworthy, hazardous waste management company
+        title="Why SV Green for Hazardous Waste Disposal?"
+        description=" SV Green is a trustworthy, hazardous waste management company
             that takes care of your hazardous scrap compliance-related needs so
             that you can focus on your essential business operations. We believe
             in offering the best customer satisfaction. Therefore, our expert

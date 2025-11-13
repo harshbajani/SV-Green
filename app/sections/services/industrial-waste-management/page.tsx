@@ -33,7 +33,7 @@ const IndustrialWasteManagementPage = () => {
         src="/industrial-waste.png"
         alt="Industrial Waste"
         title="Industrial Waste Management Services"
-        description="Is waste management a bottleneck of your business? Fret not; Recycling Hub is a comprehensive industrial waste recycling company in Ahmedabad that will solve all your waste management hurdles so you can be relieved. Our industrial waste management services include:"
+        description="Is waste management a bottleneck of your business? Fret not; SV Green is a comprehensive industrial waste recycling company in Ahmedabad that will solve all your waste management hurdles so you can be relieved. Our industrial waste management services include:"
       />
       <ExpertiseSection
         title="Benefits Of Our Industrial Waste Management Services"
@@ -42,12 +42,12 @@ const IndustrialWasteManagementPage = () => {
         alt="Waste recycling facility operations"
       />
       <BenefitsStepper
-        title="Value added services at Recycling Hub"
+        title="Value added services at SV Green"
         item={IndustrialWasteProcess}
       />
       <RecycleHub
-        title="Why Recycling hub for Plastic Waste Disposal?"
-        description="Recycling Hub is a trustworthy, hazardous waste management company that takes care of your hazardous scrap compliance-related needs so that you can focus on your essential business operations. We believe in offering the best customer satisfaction. Therefore, our expert staff promptly answers your queries to work with you on your waste disposal and recycling requirements."
+        title="Why SV Green for Plastic Waste Disposal?"
+        description="SV Green is a trustworthy, hazardous waste management company that takes care of your hazardous scrap compliance-related needs so that you can focus on your essential business operations. We believe in offering the best customer satisfaction. Therefore, our expert staff promptly answers your queries to work with you on your waste disposal and recycling requirements."
         src="/industrial-waste.png"
         alt="Industrial Waste"
         item={whyRecycle}
