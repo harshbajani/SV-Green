@@ -27,10 +27,10 @@ export default [
       "routes/services/extended-producer-responsibility.tsx"
     ),
     route("circular-economy", "routes/services/circular-economy.tsx"),
-    // route(
-    //   "organic-waste-management",
-    //   "routes/services/organic-waste-management.tsx"
-    // ),
+    route(
+      "organic-waste-management",
+      "routes/services/organic-waste-management.tsx"
+    ),
     // route("e-waste-management", "routes/services/e-waste-management.tsx"),
     // route(
     //   "rubber-scrap-waste-management",
