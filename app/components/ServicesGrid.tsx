@@ -7,17 +7,9 @@ interface Props {
   description: string;
   src: string;
   alt: string;
-  opacity: string;
 }
 
-export const ServicesGrid = ({
-  item,
-  title,
-  description,
-  src,
-  alt,
-  opacity,
-}: Props) => {
+export const ServicesGrid = ({ item, title, description, src, alt }: Props) => {
   return (
     <section className="py-20 px-4 bg-brand-600">
       <div className="container mx-auto max-w-7xl">
@@ -102,14 +94,14 @@ export const ServicesGrid = ({
         <img
           src={src}
           alt={alt}
-          className={`h-full w-full object-cover invert opacity-${opacity}`}
+          className="h-full w-full object-cover invert opacity-15"
         />
       </div>
       <div className="absolute left-0 z-0 -mt-[500px] hidden sm:block">
         <img
           src={src}
           alt={alt}
-          className={`h-full w-full object-cover invert opacity-${opacity}`}
+          className="h-full w-full object-cover invert opacity-15"
         />
       </div>
     </section>

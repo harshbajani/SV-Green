@@ -34,7 +34,6 @@ const PlasticWasteManagementPage = () => {
         description="Recycling Hub embraces technology to provide digital reports and certifications that instil transparency. Lastly, as a modern plastic waste recycler in Ahmedabad , we extend end-to-end solutions to overcoming the challenges experienced with conventional waste collection and recycling."
         src="/plastic-waste.png"
         alt="Plastic Waste Management"
-        opacity="30"
       />
       <ExpertiseSection
         title="Benefits Of Our Plastic Waste Management Services"
@@ -51,7 +50,6 @@ const PlasticWasteManagementPage = () => {
         description="Recycling Hub is a trustworthy, hazardous waste management company that takes care of your hazardous scrap compliance-related needs so that you can focus on your essential business operations. We believe in offering the best customer satisfaction. Therefore, our expert staff promptly answers your queries to work with you on your waste disposal and recycling requirements."
         src="/plastic-waste.png"
         alt="Plastic Waste Management"
-        opacity="30"
         item={whyRecycle}
       />
     </div>
