@@ -91,6 +91,11 @@ export const circularEconomy = [
   "Circular Economy takes over conventional linear economy approaches, i.e., take, make and dispose. It ascertains waste reduction by reusing, repairing, refurbishing, and recycling waste materials. We at SV Green are a leading GPCB authorized recycler offering advanced recycling solutions. Not only do we enable businesses to fulfill their responsibility by creating a positive social impact, but we also take concrete steps towards environmental and economic sustainability.",
 ];
 
+export const organicWaste = [
+  "The best quality of organic waste is that it is biodegradable in nature as it originates from living sources like animals, plants, and microorganisms. It is a highly reusable form of waste for energy, recreating sustainable products, manures, and more.",
+  "As a major organic waste recycler in Gujarat, we have the most convenient and highly effective processes to treat and manage organic waste. We provide comprehensive organic waste management to businesses for appropriate recycling from collection to processing in our unique facilities. Hence, Recycling Hub is the name you can rely on when it comes to any type of waste management solution.",
+];
+
 // * Service Grid
 
 export const services = [
@@ -214,6 +219,29 @@ export const circularEconomyServices = [
     title: "Company Benefits",
     description:
       "Lower the cost of the businesses by creating new profit streams. Also, analyze complex medium-lived products that fast move consumer goods while showing a circular Economy with various improvements.",
+  },
+];
+
+export const organicWasteServices = [
+  {
+    title: "More Sanitary than Traditional Waste",
+    description:
+      "For food industries, leftovers are a significant cause of attraction for pests, rats, rodents, dogs, and other infestations, causing product damage and contamination. Safe disposal of food waste is essential for appropriate sanitation. Recycling hub is a responsible organic recycler helping effective food waste management.",
+  },
+  {
+    title: "Turn Waste into Resources",
+    description:
+      "Organic waste can be used as manure to nourish the soil and further reinforce the green revolution. Waste food dumped in the landfills rots over time and produces harmful methane gas during decomposition. We buy organic scrap and manage it safely and effectively as per governmental guidelines.",
+  },
+  {
+    title: "Makes Sound Financial Sense",
+    description:
+      "Various city waste managers are given charge of trash and other waste diversions. One indeed considers raising the dumping by finding new areas and unearthing the purpose of disposal. If you're looking to trim your excess expenditure, consider Recycling Hub for the financial benefits.",
+  },
+  {
+    title: "Sustains Communities",
+    description:
+      "We support local farmers by providing adequately recycled organic manure to make the soil more fertile. In turn, we encourage organic farming for better human health. Choose Recycling Hub to get outstanding waste management service for all types of waste, including organic waste.",
   },
 ];
 
@@ -382,6 +410,34 @@ export const circularEconomyProcess = [
     title: "Regenerate Natural Systems",
     description:
       "A circular user economy usually avoids using non-renewable resources and helps preserve renewable ones. For instance, we return valuable nutrients to the soil with supporting regeneration. We use renewable energy and rely on fossil fuels while undergoing the best recycling solutions.",
+  },
+];
+
+export const organicWasteProcess = [
+  {
+    title: "Collection",
+    description:
+      "The first step is to collect the waste material from producers. We ensure uninterrupted waste collection from the site so that your operations may continue uninterrupted. Our workforce is trained to execute professional services with appropriate safety measures.",
+  },
+  {
+    title: "Inert Separation",
+    description:
+      "It is one of the essential steps where organic waste is recycled using the inert separation technique. In this phase, waste accumulated at our facilities is segregated manually using machinery that removes substances like glass, plastic, and bricks and separates the materials.",
+  },
+  {
+    title: "Preparation",
+    description:
+      "Before the organic waste is added to a recycling system, we need to prepare it first. Composting, shredding, and stacking organic waste is a must. There are a few methods used, like stabilization before recycling. You can rely on us for responsible disposal of your organic waste.",
+  },
+  {
+    title: "Recycling Process",
+    description:
+      "Understanding the nature of organic waste and its desired end products, we adopt a suitable method for recycling. As a GPCB authorized recycler, we help you eliminate all waste and treat them well using thermophilic digesters.",
+  },
+  {
+    title: "Screening and Grading",
+    description:
+      "In this phase, the compost is screened into different sizes and used for other purposes. Depending on the application of end products, screening and grading are an essential part of the organic waste management process.",
   },
 ];
 
