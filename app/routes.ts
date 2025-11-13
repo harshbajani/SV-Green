@@ -22,10 +22,10 @@ export default [
       "industrial-waste-management",
       "routes/services/industrial-waste-management.tsx"
     ),
-    // route(
-    //   "extended-producer-responsibility",
-    //   "routes/services/extended-producer-responsibility.tsx"
-    // ),
+    route(
+      "extended-producer-responsibility",
+      "routes/services/extended-producer-responsibility.tsx"
+    ),
     // route("circular-economy", "routes/services/circular-economy.tsx"),
     // route(
     //   "organic-waste-management",

@@ -82,6 +82,10 @@ export const industrialWasteContent = [
   "Our expert team understands the chemical, materials, and products with proficient knowledge concerning CPCB & GPCB guidelines. Our industrial waste management services vouch for 100% compliance like no other. Being an industrial waste recycling company , we tend to relieve the hassles of waste management.",
 ];
 
+export const extendedProducerResponsibility = [
+  "Producers are assigned significant financial and/or physical responsibility for the handling or disposing of post-consumer plastic waste under the Extended Producer Responsibility (EPR) policy. Recycling Hub is a leading SBM, and GPCB approved EPR agency in Ahmedabad known for convenient recycling programs for large-scale waste generators. We employ specific recycling and disposal by devising individual plastic-focused strategies for transferring responsibility to the producers.",
+];
+
 // * Benefits Stepper
 
 export const benefits = [
@@ -168,6 +172,24 @@ export const IndustrialWasteProcess = [
   },
 ];
 
+export const EPRProcess = [
+  {
+    title: "Reverse Logistics",
+    description:
+      "Recycling Hub is a preferred GPCB authorized scrap buyer in Gujarat with a well-structured reverse supply chain. We ensure effective plastic waste collection and allow adequate transportation of post-consumer waste to various predetermined destinations.",
+  },
+  {
+    title: "Social Inclusion",
+    description:
+      "At Recycling Hub, we empower our associate safai saathis by generating earning sources for a decent living. We offer the same empathetic care to every member internal and external to the company as the best GPCB approved EPR agency in Gujarat.",
+  },
+  {
+    title: "Public Awareness",
+    description:
+      "Awareness is the key to bringing about a change. Hence, we conduct extensive awareness programs that include corporate events, collection drives, and other social media campaigns on source segregation and the impact of plastic pollution.",
+  },
+];
+
 // * Expertise section
 
 export const expertise = [
@@ -196,6 +218,13 @@ export const IndustrialWasteServices = [
   "Get support for circular economy",
   "Create sustainable employment for local rag pickers",
   "Get waste diversion certificate",
+];
+
+export const EPRServices = [
+  "SBM Approved EPR Agency",
+  "End to End Responsibility",
+  "Significant Social Impact",
+  "Transparency In Reporting",
 ];
 
 // * Service Grid
@@ -275,6 +304,29 @@ export const industrialServices = [
     title: "Diversion Certificate",
     description:
       "We provide a “Waste Diversion Certificate” with the environmental footprint report so that you can achieve your compliance goals.",
+  },
+];
+
+export const eprServices = [
+  {
+    title: "Waste Reporting",
+    description:
+      "We have embraced IoT technology to monitor the collection and disposal of plastic waste while updating you digitally.",
+  },
+  {
+    title: "Expert Assistance",
+    description:
+      "Our well-trained and equipped team provides you with quality services. Our engineers and lawyers assist you in meeting compliance.",
+  },
+  {
+    title: "Measuring Impact",
+    description:
+      "We understand your dire need for compliance. Hence, we provide a social & environmental impact report every quarter along with the EPR quarterly report.",
+  },
+  {
+    title: "Plastic Waste Stream",
+    description:
+      "We collaborate with different waste streams to collect PET, MLP, HDPE, LDPE & PP, and other plastic waste for recycling and safe disposal.",
   },
 ];
 
