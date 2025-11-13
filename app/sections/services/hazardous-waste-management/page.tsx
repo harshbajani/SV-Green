@@ -32,7 +32,6 @@ const HazardousWastePage = () => {
         item={services}
         src="/waste.png"
         alt="Hazardous Waste"
-        opacity="15"
         title="Hazardous Waste Management Services"
         description="As a GPCB approved hazardous waste recycler, our recycling and disposal service spectrum encompasses industrial, commercial, and other hazardous waste like used batteries, electronics, and cleaning products."
       />
@@ -56,7 +55,6 @@ const HazardousWastePage = () => {
             disposal and recycling requirements."
         src="/waste.png"
         alt="Hazardous Waste"
-        opacity="15"
         item={whyRecycle}
       />
     </div>

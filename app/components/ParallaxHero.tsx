@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Recycle, Shield, Heart, Award } from "lucide-react";
 import SplitText from "./react-bits/SplitText";
 
 interface Props {
@@ -23,9 +22,8 @@ export function ParallaxHero({
     offset: ["start start", "end start"],
   });
 
+  // keep parallax for background only
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div ref={heroRef} className="relative h-[70vh] overflow-hidden">
@@ -49,15 +47,12 @@ export function ParallaxHero({
           />
         )}
         {/* Overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/30 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </motion.div>
 
-      {/* Content */}
-      <motion.div
-        style={{ opacity, y: contentY }}
-        className="relative h-full flex items-center justify-center z-10"
-      >
-        <div className="text-center text-white px-4">
+      {/* Content (STATIC relative to scroll) */}
+      <div className="relative h-full flex items-center justify-center z-10 pointer-events-none">
+        <div className="text-center text-white px-4 pointer-events-auto">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -77,6 +72,7 @@ export function ParallaxHero({
               textAlign="center"
             />
           </motion.h1>
+
           {subtitle && (
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -99,7 +95,7 @@ export function ParallaxHero({
             </motion.p>
           )}
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div

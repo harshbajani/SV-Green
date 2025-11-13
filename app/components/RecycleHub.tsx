@@ -7,13 +7,12 @@ export const RecycleHub = ({
   src,
   alt,
   item,
-  opacity,
 }: {
   title: string;
   description: string;
   src: string;
   alt: string;
-  opacity: string;
+
   item: { title: string; Icon?: any }[];
 }) => {
   return (
@@ -66,14 +65,14 @@ export const RecycleHub = ({
         <img
           src={src}
           alt={alt}
-          className={`h-full w-full object-cover invert opacity-${opacity}`}
+          className="h-full w-full object-cover invert opacity-15"
         />
       </div>
       <div className="absolute left-0 z-0 -mt-[500px] hidden sm:block">
         <img
           src={src}
           alt={alt}
-          className={`h-full w-full object-cover invert opacity-${opacity}`}
+          className="h-full w-full object-cover invert opacity-15"
         />
       </div>
     </section>

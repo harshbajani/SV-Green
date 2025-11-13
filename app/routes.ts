@@ -18,10 +18,10 @@ export default [
       "plastic-waste-management",
       "routes/services/plastic-waste-management.tsx"
     ),
-    // route(
-    //   "industrial-waste-management",
-    //   "routes/services/industrial-waste-management.tsx"
-    // ),
+    route(
+      "industrial-waste-management",
+      "routes/services/industrial-waste-management.tsx"
+    ),
     // route(
     //   "extended-producer-responsibility",
     //   "routes/services/extended-producer-responsibility.tsx"

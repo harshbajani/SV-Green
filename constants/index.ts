@@ -60,6 +60,7 @@ export const NavItems: NavItem[] = [
   { name: "Contact us", href: "/contact-us" },
 ];
 
+// * Content with image
 export const hazardContent = [
   "Waste that is harmful to human health and the environment is classified as hazardous. We are a reliable hazardous waste recycler in Ahmedabad, Gujarat, extending an efficacious treatment process that aligns with your industrial waste handling needs.",
   "Recycling Hub is a GPCB approved hazardous waste recycler in Ahmedabad that has earned the stature of the most trusted, owing to our unparalleled services and a well-trained team.",
@@ -74,6 +75,14 @@ export const plasticWasteContent = [
   "We formulate customized plans for our clients as we understand the distinctive needs of various industries. Furthermore, as a GPCB approved waste recycler, we adhere to regulatory guidelines, so you get 100% compliance, justified pricing and unparalleled services.",
   "Our plastic waste collection activity is undertaken by a well-trained team of people from marginalised sectors that follow stringent safety protocols to ensure seamless service. Additionally, our plastic waste recycling units comply with PCB guidelines so that you can rely on us for quality and accurate services.",
 ];
+
+export const industrialWasteContent = [
+  "Industrial and manufacturing processes generate tons of waste at every stage. The nature of the waste depends on the type of process governed by strict regulations, for instance, hazardous waste. Hence, as Gujarat's one-stop industrial waste management company, we provide comprehensive and strategic solutions.",
+  "Being a GPCB authorized industrial waste recycler, we are your perfect ally for recycling, diversions and other purposeful reuse of your waste. Recycling Hub is a leading industrial scrap buyer in Gujarat to provide all-inclusive waste management and disposal services.",
+  "Our expert team understands the chemical, materials, and products with proficient knowledge concerning CPCB & GPCB guidelines. Our industrial waste management services vouch for 100% compliance like no other. Being an industrial waste recycling company , we tend to relieve the hassles of waste management.",
+];
+
+// * Benefits Stepper
 
 export const benefits = [
   {
@@ -131,6 +140,36 @@ export const PlasticWasteProcess = [
   },
 ];
 
+export const IndustrialWasteProcess = [
+  {
+    title: "Technology-Driven Process",
+    description:
+      "Leverage technology-driven accurate disposal solutions to manage your waste and recycling streams at Gujarat's leading industrial waste management company",
+  },
+  {
+    title: "Addressing environmental concerns",
+    description:
+      "As an industrial waste recycler, we use advanced disposal methods which eliminate the impact on environmental concerns with recycling waste diversion solutions.",
+  },
+  {
+    title: "Improved Waste Flow Efficiencies",
+    description:
+      "At Recycling Hub, you get a continual site and waste stream analysis with continuous improvement metrics to keep costs in line.",
+  },
+  {
+    title: "Compliance Management And Regulatory",
+    description:
+      "We know how crucial regulatory compliance is. Hence, we ensure 100% compliance for all our waste management solutions.",
+  },
+  {
+    title: "Save Environment And Money",
+    description:
+      "Now leave green footprints and cost checked with Recycling Hub's affordable industrial waste management solutions.  ",
+  },
+];
+
+// * Expertise section
+
 export const expertise = [
   "Hazardous Waste Profiling",
   "Hazardous Waste Collection",
@@ -148,6 +187,18 @@ export const PlasticWasteServices = [
   "Get waste diversion certificate",
   "Online Manifest for plastic waste recycling",
 ];
+
+export const IndustrialWasteServices = [
+  "Reduced environmental pollution",
+  "Environmental and Economic Sustainability",
+  "Ensure 100% compliance as per PCB norms",
+  "Get quick approval for PWM registration",
+  "Get support for circular economy",
+  "Create sustainable employment for local rag pickers",
+  "Get waste diversion certificate",
+];
+
+// * Service Grid
 
 export const services = [
   {
@@ -192,6 +243,38 @@ export const plasticServices = [
     title: "Waste Management Services",
     description:
       "We are the best GPCB authorized plastic waste recycler in Gujarat, responsible for managing sustainable waste management solutions for bulk waste generators, be it businesses, industries or government entities.",
+  },
+];
+
+export const industrialServices = [
+  {
+    title: "Disposal",
+    description:
+      "#ZeroWasteToLandfills is what we pledge. Therefore, we at Recycling Hub deploy the safest and eco-friendly methods for disposal that lead to recycling and recreation.",
+  },
+  {
+    title: "Logistics",
+    description:
+      "When we say end-to-end waste management, we mean it quite literally! Collection, transportation, sorting, bulking and recycling we manage it all.",
+  },
+  {
+    title: "Sourcing",
+    description: "Recyclables and other reuses of materials.",
+  },
+  {
+    title: "Management",
+    description:
+      "At Recycling Hub, different types of wastes are treated differently to ensure safety, accuracy and compliance with regulatory guidelines.",
+  },
+  {
+    title: "Reporting",
+    description:
+      "We keep you notified with digital receipts of the processes so that you are informed at every stage. We also provide monthly reports for overall analysis.",
+  },
+  {
+    title: "Diversion Certificate",
+    description:
+      "We provide a “Waste Diversion Certificate” with the environmental footprint report so that you can achieve your compliance goals.",
   },
 ];
 
