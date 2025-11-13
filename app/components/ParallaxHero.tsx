@@ -57,19 +57,20 @@ export function ParallaxHero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold mb-2"
           >
             <SplitText
               text={title}
               delay={80}
               duration={0.8}
               ease="power3.out"
-              splitType="chars"
+              splitType="words, chars"
               from={{ opacity: 0, y: 50, rotateX: -90 }}
               to={{ opacity: 1, y: 0, rotateX: 0 }}
               threshold={0.1}
               rootMargin="0px"
               textAlign="center"
+              className="pb-2"
             />
           </motion.h1>
 
@@ -85,7 +86,7 @@ export function ParallaxHero({
                 delay={80}
                 duration={0.8}
                 ease="power3.out"
-                splitType="chars"
+                splitType="words, chars"
                 from={{ opacity: 0, y: 50, rotateX: -90 }}
                 to={{ opacity: 1, y: 0, rotateX: 0 }}
                 threshold={0.1}
