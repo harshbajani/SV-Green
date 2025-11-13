@@ -21,7 +21,7 @@ function AboutSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              We are Recycling Hub
+              We are SV Green
             </motion.span>
 
             <motion.h2
@@ -51,7 +51,7 @@ function AboutSection() {
               </p>
 
               <p>
-                Driven by the goal of environmental conservation, Recycling Hub
+                Driven by the goal of environmental conservation, SV Green
                 powers large-scale waste generators with one-stop waste
                 management solutions. At present, we are serving 150+ diverse
                 manufacturing industries pan India. Our organizational journey
@@ -68,7 +68,7 @@ function AboutSection() {
               </p>
 
               <p>
-                Recycling Hub - a Pollution Control Board's authorized waste
+                SV Green - a Pollution Control Board's authorized waste
                 recycler, seamlessly mitigates the challenges associated with
                 plastic waste management, hazardous waste management, E-waste
                 management, and more, for diverse industrial sectors.
@@ -118,19 +118,19 @@ function WhyChooseUs() {
       icon: <Shield className="w-8 h-8" />,
       title: "Excellent Service",
       description:
-        "Recycling Hub endures a deep understanding of the GPCB and CPCB waste management standards. However, one compliance is not enough; thus we stay ahead of the curve by delivering hassle-free services and innovative waste management solutions.",
+        "SV Green endures a deep understanding of the GPCB and CPCB waste management standards. However, one compliance is not enough; thus we stay ahead of the curve by delivering hassle-free services and innovative waste management solutions.",
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Our Values",
       description:
-        "We ensure transparency, customer satisfaction, innovation, social commitment, integrity, environmental safety, and 100% compliance as a GPCB-approved recycler. Recycling Hub delivers excellence through continuous technology up-gradation and higher service levels.",
+        "We ensure transparency, customer satisfaction, innovation, social commitment, integrity, environmental safety, and 100% compliance as a GPCB-approved recycler. SV Green delivers excellence through continuous technology up-gradation and higher service levels.",
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Our Commitment",
       description:
-        "Recycling Hub is committed to delivering all-inclusive waste management solutions with complete transparent processes adhering to regulatory standards. From pickup to disposal, we pledge for seamless and uninterrupted waste management.",
+        "SV Green is committed to delivering all-inclusive waste management solutions with complete transparent processes adhering to regulatory standards. From pickup to disposal, we pledge for seamless and uninterrupted waste management.",
     },
     {
       icon: <Recycle className="w-8 h-8" />,
@@ -227,7 +227,7 @@ function ImpactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Recycling Hub Impact
+            SV Green Impact
           </h2>
           <p className="text-xl text-gray-600">
             Making social, economic & environmental impact
