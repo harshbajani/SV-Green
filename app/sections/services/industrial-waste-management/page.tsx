@@ -32,7 +32,6 @@ const IndustrialWasteManagementPage = () => {
         item={industrialServices}
         src="/industrial-waste.png"
         alt="Industrial Waste"
-        opacity="15"
         title="Industrial Waste Management Services"
         description="Is waste management a bottleneck of your business? Fret not; Recycling Hub is a comprehensive industrial waste recycling company in Ahmedabad that will solve all your waste management hurdles so you can be relieved. Our industrial waste management services include:"
       />
@@ -51,7 +50,6 @@ const IndustrialWasteManagementPage = () => {
         description="Recycling Hub is a trustworthy, hazardous waste management company that takes care of your hazardous scrap compliance-related needs so that you can focus on your essential business operations. We believe in offering the best customer satisfaction. Therefore, our expert staff promptly answers your queries to work with you on your waste disposal and recycling requirements."
         src="/industrial-waste.png"
         alt="Industrial Waste"
-        opacity="15"
         item={whyRecycle}
       />
     </div>
