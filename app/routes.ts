@@ -14,10 +14,10 @@ export default [
       "hazardous-waste-management",
       "routes/services/hazardous-waste-management.tsx"
     ),
-    // route(
-    //   "plastic-waste-management",
-    //   "routes/services/plastic-waste-management.tsx"
-    // ),
+    route(
+      "plastic-waste-management",
+      "routes/services/plastic-waste-management.tsx"
+    ),
     // route(
     //   "industrial-waste-management",
     //   "routes/services/industrial-waste-management.tsx"
