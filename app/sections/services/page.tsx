@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { NavItems } from "../../constants";
+import { NavItems } from "../../../constants";
 
 export default function ServicesPage() {
   const services =

@@ -4,7 +4,7 @@ import {
   PlasticWasteProcess,
   PlasticWasteServices,
   whyRecycle,
-} from "../../../constants";
+} from "../../../../constants";
 import { ParallaxHero } from "~/components/ParallaxHero";
 import { RecycleHub } from "~/components/RecycleHub";
 import { ExpertiseSection } from "~/components/ExpertiseSection";

@@ -1,5 +1,5 @@
+import ContactUsPage from "~/sections/contact-us/page";
 import type { Route } from "./+types/contact-us";
-import ContactUsPage from "../../sections/contact-us/page";
 
 export function meta({}: Route.MetaArgs) {
   return [

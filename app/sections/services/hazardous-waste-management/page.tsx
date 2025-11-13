@@ -1,7 +1,3 @@
-import { useEffect, useRef } from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ParallaxHero } from "~/components/ParallaxHero";
 import {
   benefits,
@@ -9,7 +5,7 @@ import {
   hazardContent,
   services,
   whyRecycle,
-} from "../../../constants";
+} from "../../../../constants";
 import { RecycleHub } from "~/components/RecycleHub";
 import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { BenefitsStepper } from "~/components/BenefitsStepper";

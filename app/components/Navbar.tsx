@@ -153,10 +153,7 @@ function DropdownItem({
           transition={{ duration: 0.3 }}
         >
           <FiChevronDown
-            className={clsx(
-              "transition-colors duration-200",
-              scrolled ? "text-white" : "text-foreground"
-            )}
+            className={clsx("transition-colors duration-200 text-white")}
           />
         </motion.div>
       </div>
