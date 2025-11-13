@@ -1,3 +1,9 @@
+import { PiNuclearPlantLight, PiCity } from "react-icons/pi";
+import { GoLaw } from "react-icons/go";
+import { RiServiceLine } from "react-icons/ri";
+import { GiTeamIdea } from "react-icons/gi";
+import { FaRecycle } from "react-icons/fa";
+
 export type NavItem = {
   name: string;
   href?: string;
@@ -115,5 +121,32 @@ export const services = [
     title: "Customized Waste Solutions",
     description:
       "We create dedicated waste recycling solutions based on your needs. As a GPCB authorized recycler, we tackle pollution generated through hazardous waste recycling.",
+  },
+];
+
+export const whyRecycle = [
+  {
+    title: "Technology Driven Service",
+    Icon: PiNuclearPlantLight,
+  },
+  {
+    title: "Present in Wide Range of Cities",
+    Icon: PiCity,
+  },
+  {
+    title: "Integrity and Work Ethics",
+    Icon: GoLaw,
+  },
+  {
+    title: "Excellent Service",
+    Icon: RiServiceLine,
+  },
+  {
+    title: "Excellent Service",
+    Icon: GiTeamIdea,
+  },
+  {
+    title: "Waste Management Solution",
+    Icon: FaRecycle,
   },
 ];

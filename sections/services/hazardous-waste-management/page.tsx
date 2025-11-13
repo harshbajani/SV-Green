@@ -3,7 +3,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ParallaxHero } from "~/components/ParallaxHero";
-import { benefits, expertise, services } from "../../../constants";
+import { benefits, expertise, services, whyRecycle } from "../../../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,10 +103,8 @@ const ContentWithImage = ({ reverse = false }) => {
             className="flex-1"
           >
             <h2 className="text-3xl font-bold mb-6">
-              <ScrollFloat stagger={0.02}>Cautious And Reliable</ScrollFloat>{" "}
-              <ScrollFloat stagger={0.02}>
-                Hazardous waste management company in Ahmedabad
-              </ScrollFloat>
+              Cautious And Reliable Hazardous waste management company in
+              Ahmedabad
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               {[
@@ -149,7 +147,7 @@ const ContentWithImage = ({ reverse = false }) => {
                   y: imageY,
                   scale: imageScale,
                 }}
-                className="relative rounded-lg shadow-2xl w-full h-auto"
+                className="relative rounded-lg shadow-2xl w-full h-auto aspect-square"
               />
             </div>
           </motion.div>
@@ -162,7 +160,7 @@ const ContentWithImage = ({ reverse = false }) => {
 // Services Grid with Enhanced Hover Effects
 const ServicesGrid = () => {
   return (
-    <section className="py-20 px-4 bg-brand-50/30">
+    <section className="py-20 px-4 bg-brand-600">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -171,14 +169,14 @@ const ServicesGrid = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-brand-50">
             <ScrollFloat stagger={0.03}>
               Hazardous Waste Management Services
             </ScrollFloat>
           </h2>
-          <p className="text-gray-700 max-w-4xl mx-auto">
+          <p className="text-brand-50 max-w-4xl mx-auto text-sm">
             As a{" "}
-            <span className="font-semibold text-brand-600">
+            <span className="font-semibold text-white">
               GPCB approved hazardous waste recycler
             </span>
             , our recycling and disposal service spectrum encompasses
@@ -200,7 +198,7 @@ const ServicesGrid = () => {
                 scale: 1.03,
                 transition: { duration: 0.3, ease: "easeOut" },
               }}
-              className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-brand-600 h-full relative overflow-hidden group cursor-pointer"
+              className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-brand-200 h-full relative overflow-hidden group cursor-pointer"
             >
               {/* Animated gradient background on hover */}
               <motion.div
@@ -249,6 +247,20 @@ const ServicesGrid = () => {
           ))}
         </div>
       </div>
+      <div className="absolute right-0 z-0 -mt-96 hidden sm:block">
+        <img
+          src="/waste.png"
+          alt="Hazadous Waste"
+          className="h-full w-full object-cover invert opacity-15"
+        />
+      </div>
+      <div className="absolute left-0 z-0 -mt-96 hidden sm:block">
+        <img
+          src="/waste.png"
+          alt="Hazardous Waste"
+          className="h-full w-full object-cover invert opacity-15"
+        />
+      </div>
     </section>
   );
 };
@@ -289,7 +301,7 @@ const ExpertiseSection = () => {
                 >
                   <motion.div
                     whileHover={{ scale: 1.2, rotate: 360 }}
-                    transition={{ duration: 0.5, type: "spring" }}
+                    transition={{ duration: 0.5, type: "tween" }}
                     className="w-8 h-8 bg-brand-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:shadow-lg"
                   >
                     <svg
@@ -329,7 +341,7 @@ const ExpertiseSection = () => {
                 src="https://images.unsplash.com/photo-1697698449698-2f2696edcd4e?w=800&q=80"
                 alt="Waste recycling facility operations"
                 style={{ y: imageY }}
-                className="relative rounded-lg shadow-2xl w-full h-full"
+                className="relative rounded-lg shadow-2xl w-full h-full aspect-square"
               />
             </div>
           </motion.div>
@@ -370,7 +382,6 @@ const BenefitsStepper = () => {
         }
       );
 
-      // Animate each circle to get color when line reaches it - WITH REVERSE
       circles.forEach((circle, index) => {
         const numberSpan = circle.querySelector("span");
         if (!numberSpan) return;
@@ -412,9 +423,7 @@ const BenefitsStepper = () => {
             className="lg:col-span-5 lg:sticky lg:top-24 h-fit"
           >
             <h3 className="text-3xl md:text-4xl font-bold text-brand-800">
-              <ScrollFloat stagger={0.03}>
-                Benefits of our Hazardous Scrap Management
-              </ScrollFloat>
+              Benefits of our Hazardous <br /> Scrap Management
             </h3>
           </motion.div>
 
@@ -471,6 +480,78 @@ const BenefitsStepper = () => {
   );
 };
 
+const RecycleHub = () => {
+  return (
+    <section className="py-20 px-4 bg-brand-600">
+      <div className="container mx-auto max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-brand-50">
+            <ScrollFloat stagger={0.03}>
+              Why Recycling hub for Hazardous Waste Disposal?
+            </ScrollFloat>
+          </h2>
+          <p className="text-brand-50 max-w-3xl mx-auto text-sm">
+            Recycling Hub is a trustworthy, hazardous waste management company
+            that takes care of your hazardous scrap compliance-related needs so
+            that you can focus on your essential business operations. We believe
+            in offering the best customer satisfaction. Therefore, our expert
+            staff promptly answers your queries to work with you on your waste
+            disposal and recycling requirements.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {whyRecycle.map(({ title, Icon }, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{
+                y: -12,
+                scale: 1.03,
+                transition: { duration: 0.3, ease: "easeOut" },
+              }}
+              className="bg-white hover:bg-brand-600 hover:group rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-brand-200 h-full relative overflow-hidden group cursor-pointer z-30"
+            >
+              <motion.div className="w-16 h-16 bg-brand-600 group-hover:bg-white rounded-full flex items-center justify-center mb-4 relative z-10 transition-all duration-300 shadow-md group-hover:shadow-lg">
+                <span className="text-white group-hover:text-brand-600 font-bold text-xl">
+                  <Icon className="h-10 w-10" />
+                </span>
+              </motion.div>
+
+              <h3 className="font-bold text-lg mb-3 text-brand-800 relative z-10 group-hover:text-white transition-colors duration-300">
+                {title}
+              </h3>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      <div className="absolute right-0 z-0 -mt-[500px] hidden sm:block">
+        <img
+          src="/waste.png"
+          alt="Hazardous Waste"
+          className="h-full w-full object-cover invert opacity-15"
+        />
+      </div>
+      <div className="absolute left-0 z-0 -mt-[500px] hidden sm:block">
+        <img
+          src="/waste.png"
+          alt="Hazardous Waste"
+          className="h-full w-full object-cover invert opacity-15"
+        />
+      </div>
+    </section>
+  );
+};
+
 // Main Component
 const HazardousWastePage = () => {
   return (
@@ -485,6 +566,7 @@ const HazardousWastePage = () => {
       <ServicesGrid />
       <ExpertiseSection />
       <BenefitsStepper />
+      <RecycleHub />
     </div>
   );
 };
