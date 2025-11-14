@@ -96,6 +96,12 @@ export const organicWaste = [
   "As a major organic waste recycler in Gujarat, we have the most convenient and highly effective processes to treat and manage organic waste. We provide comprehensive organic waste management to businesses for appropriate recycling from collection to processing in our unique facilities. Hence, Recycling Hub is the name you can rely on when it comes to any type of waste management solution.",
 ];
 
+export const eWaste = [
+  "Safe disposal of Electronic waste or E-waste is quintessential. Hence, we step in as a GPCB registered E-waste recycler",
+  "E-waste is those electronic products that have come to an end of their estimated effective lifespan. When disposed of in landfills, these products become toxic and hazardous, posing a threat to human health and the environment.",
+  "E-waste recycling using appropriate methods enables the recreation of products ensuring minimum waste in landfills. Recycling Hub is a renowned E-waste recycling company in Ahmedabad that facilitates the safe disposal of E-waste products while offering uncompromised recycling services for environmental and social advantages.",
+];
+
 // * Service Grid
 
 export const services = [
@@ -242,6 +248,29 @@ export const organicWasteServices = [
     title: "Sustains Communities",
     description:
       "We support local farmers by providing adequately recycled organic manure to make the soil more fertile. In turn, we encourage organic farming for better human health. Choose Recycling Hub to get outstanding waste management service for all types of waste, including organic waste.",
+  },
+];
+
+export const eWasteServices = [
+  {
+    title: "Conserves Natural Resources",
+    description:
+      "E-waste recycling also improves the availability of raw materials. You can reuse metal and parts or entire parts such as motherboards. ICs can also be extracted for refurbishing, reducing costs for companies.",
+  },
+  {
+    title: "Reflect Business Credibility",
+    description:
+      "Recycling is a concrete approach to demonstrating a company's dedication to social virtues. We provide recycling certifications that reflect your efforts and how your company is meeting its green aspirations.",
+  },
+  {
+    title: "Supports the Community",
+    description:
+      "Donate your old waste products such as computers and mobile phones that create a monetary return. As an E-waste recycler in Gujarat, our team helps individuals gain access to technology with ease.",
+  },
+  {
+    title: "Protects health & environment",
+    description:
+      "Electronics come with hazardous material that's harmful to the environment. Therefore, we allow the customer to reuse and recycle electronics by keeping hazardous material from harming humans.",
   },
 ];
 
@@ -438,6 +467,24 @@ export const organicWasteProcess = [
     title: "Screening and Grading",
     description:
       "In this phase, the compost is screened into different sizes and used for other purposes. Depending on the application of end products, screening and grading are an essential part of the organic waste management process.",
+  },
+];
+
+export const eWasteProcess = [
+  {
+    title: "Dismantling",
+    description:
+      "As the name suggests, this stage involves breaking down the E-waste into smaller components to avoid dilution or contamination. It is done carefully to prevent any toxic substance from getting into the downstream processes.",
+  },
+  {
+    title: "Processing",
+    description:
+      "It's a stage where industries use the e-waste process for scaling large operations and obtaining concentrated recyclable materials. We have separate units for crushing, eddy current, shredders, and other air separators.",
+  },
+  {
+    title: "Refining",
+    description:
+      "It's a process of refining raw materials separated from dismantling and processing with minimal to no environmental impact. It comes with most fractions needed for disposal as secondary raw material and in the final disposal site.",
   },
 ];
 
