@@ -102,6 +102,11 @@ export const eWaste = [
   "E-waste recycling using appropriate methods enables the recreation of products ensuring minimum waste in landfills. Recycling Hub is a renowned E-waste recycling company in Ahmedabad that facilitates the safe disposal of E-waste products while offering uncompromised recycling services for environmental and social advantages.",
 ];
 
+export const rubberWaste = [
+  "More than 270 rubber tyres are discarded every year. Tyres are just one of the many applications of rubber. Much of which ultimately ends up in landfills. At Recycling Hub, we have a zero-waste-to-landfill policy, which means we prevent waste from getting disposed of in landfills wherever possible, including rubber waste.",
+  "We collect 100% rubber waste and recycle it. We use a wide range of products to ensure that your rubber waste is handled with full compliance and using the latest environmental regulations. As GPCB authorized recyclers, we follow the entire process within the enclosed environment and prevent the release of toxic gases.",
+];
+
 // * Service Grid
 
 export const services = [
@@ -274,6 +279,29 @@ export const eWasteServices = [
   },
 ];
 
+export const rubberWasteServices = [
+  {
+    title: "Conserve Landfill Space",
+    description:
+      "Tyres take up a lot of space in landfills due to their shape, size and quantity. As landfill is a finite space, it mandates reducing the dumping of oversized bulky items that take up more space than necessary. At Recycling hub, we provide quality recycling service with the best sustainable waste management solutions.",
+  },
+  {
+    title: "Create Beneficial Products",
+    description:
+      "Recycled tyres are used in several ways. It helps generate fuel, rubberized asphalt, railroad ties, flooring, and other alternatives. We at Recycling hub are authorized scrap tyre buyers in Ahmedabad to offer transparent services.",
+  },
+  {
+    title: "Prevents The Spread Of Disease",
+    description:
+      "The old tyres attract disease-carrying rodents. It provides a breeding ground for mosquitoes that carry lethal diseases. We are the best waste management company in Ahmedabad that eliminates tyre waste and helps prevent disease spread.",
+  },
+  {
+    title: "Produce Useful Raw Materials",
+    description:
+      "The waste tyre, when recycled, produces secondary raw materials. The rubber, after recycling, is superior to traditional materials like sound absorption, lightweight, insulting, crack-resistant, etc. We are GPCB authorized recyclers to offer effective waste management.",
+  },
+];
+
 // * Expertise section
 
 export const expertise = [
@@ -318,6 +346,15 @@ export const circularEconomyService = [
   "Save More",
   "Recycled Goods",
   "Highly Experienced Team",
+];
+
+export const rubberWasteService = [
+  "Preserve the Environment",
+  "Reduce illegal dumping",
+  "Integrity",
+  "Multiple Rubber Uses",
+  "Transparency",
+  "Inclusion",
 ];
 
 // * Benefits Stepper
@@ -485,6 +522,29 @@ export const eWasteProcess = [
     title: "Refining",
     description:
       "It's a process of refining raw materials separated from dismantling and processing with minimal to no environmental impact. It comes with most fractions needed for disposal as secondary raw material and in the final disposal site.",
+  },
+];
+
+export const rubberWasteProcess = [
+  {
+    title: "Storage Of Waste",
+    description:
+      "After being removed, ELT (End of Life Tyre) are collected in the center for controlling, weighing, and later stored before being taken to plants for treatment.",
+  },
+  {
+    title: "First Shredding",
+    description:
+      "ELT is cut into shreds sized between 5 to 40 cm in the first step. Later it is sent for energy recovery of future shredded materials to allow the separation of materials.",
+  },
+  {
+    title: "Second Shredding",
+    description:
+      "In the next level, smaller pieces are cut until it's possible to separate the rubber from steel and textile fibers. Later rubber is treated to obtain granules and powder for new product creation.",
+  },
+  {
+    title: "Recovery Of Materials",
+    description:
+      "The materials are the output of various types and dimensions based on typology in the final process. Therefore, we process it accordingly.",
   },
 ];
 
