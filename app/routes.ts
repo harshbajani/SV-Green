@@ -32,10 +32,10 @@ export default [
       "routes/services/organic-waste-management.tsx"
     ),
     route("e-waste-management", "routes/services/e-waste-management.tsx"),
-    // route(
-    //   "rubber-scrap-waste-management",
-    //   "routes/services/rubber-scrap-waste-management.tsx"
-    // ),
+    route(
+      "rubber-scrap-waste-management",
+      "routes/services/rubber-scrap-waste-management.tsx"
+    ),
     // route("wooden-scrap-buyer", "routes/services/wooden-scrap-buyer.tsx"),
     // route(
     //   "wooden-pallets-scrap-buyer",
