@@ -31,7 +31,7 @@ export default [
       "organic-waste-management",
       "routes/services/organic-waste-management.tsx"
     ),
-    // route("e-waste-management", "routes/services/e-waste-management.tsx"),
+    route("e-waste-management", "routes/services/e-waste-management.tsx"),
     // route(
     //   "rubber-scrap-waste-management",
     //   "routes/services/rubber-scrap-waste-management.tsx"
