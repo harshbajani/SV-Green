@@ -24,8 +24,12 @@ export default function Footer() {
             className="space-y-3 md:col-span-2"
           >
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 rounded-xl bg-brand-600 flex items-center justify-center">
-                <FaRecycle className="text-brand-50 h-5 w-5" />
+              <div className="h-20 w-20 rounded-xl bg-brand-600 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="logo"
+                  className="text-brand-50 h-16 w-16"
+                />
               </div>
               <div>
                 <p className="text-sm font-semibold tracking-wide uppercase text-brand-200">
@@ -127,5 +131,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-

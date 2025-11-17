@@ -693,7 +693,6 @@ export const homeservices = [
       "PET, HDPE, LDPE, PP, PVC and multilayer plastics from production lines and packaging waste.",
     color: "#588157",
     lightColor: "#a3b18a",
-    image: "🔵",
   },
   {
     id: 2,
@@ -703,7 +702,6 @@ export const homeservices = [
       "Ferrous and non-ferrous scrap, production offcuts, equipment dismantling and metal dust.",
     color: "#3a5a40",
     lightColor: "#588157",
-    image: "⚙️",
   },
   {
     id: 3,
@@ -713,7 +711,6 @@ export const homeservices = [
       "Hazardous and scheduled waste streams with full PCB compliance and manifest documentation.",
     color: "#344e41",
     lightColor: "#3a5a40",
-    image: "⚗️",
   },
   {
     id: 4,
@@ -723,7 +720,6 @@ export const homeservices = [
       "Industrial kraft paper, corrugated boxes, production rejects and office paper waste.",
     color: "#588157",
     lightColor: "#a3b18a",
-    image: "📄",
   },
   {
     id: 5,
@@ -733,7 +729,6 @@ export const homeservices = [
       "Industrial glass, containers, drums, IBCs and bulk packaging requiring cleaning or disposal.",
     color: "#3a5a40",
     lightColor: "#588157",
-    image: "🫙",
   },
   {
     id: 6,
@@ -743,7 +738,6 @@ export const homeservices = [
       "Expired paints, solvents, coating residues and contaminated containers from manufacturing.",
     color: "#344e41",
     lightColor: "#3a5a40",
-    image: "🎨",
   },
   {
     id: 7,
@@ -753,7 +747,6 @@ export const homeservices = [
       "Cotton waste, synthetic fibers, production offcuts and rejected fabric rolls.",
     color: "#588157",
     lightColor: "#a3b18a",
-    image: "🧵",
   },
   {
     id: 8,
@@ -763,6 +756,5 @@ export const homeservices = [
       "Bespoke solutions for rubber, wood, e-waste, batteries and other complex waste streams.",
     color: "#3a5a40",
     lightColor: "#588157",
-    image: "📦",
   },
 ];

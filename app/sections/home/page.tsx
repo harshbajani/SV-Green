@@ -132,21 +132,6 @@ function ServiceCard({
             >
               <Icon className="w-7 h-7 text-white" strokeWidth={2} />
             </motion.div>
-
-            <motion.span
-              animate={
-                isHovered === index
-                  ? {
-                      scale: [1, 1.2, 1],
-                      rotate: [0, 10, -10, 0],
-                    }
-                  : {}
-              }
-              transition={{ duration: 0.5 }}
-              className="text-3xl"
-            >
-              {service.image}
-            </motion.span>
           </div>
 
           {/* Title */}
