@@ -24,6 +24,7 @@ export function ParallaxHero({
             autoPlay
             loop
             muted
+            preload="auto"
             playsInline
             className="w-full h-full object-cover"
           >
