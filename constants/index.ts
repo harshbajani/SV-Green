@@ -107,6 +107,11 @@ export const rubberWaste = [
   "We collect 100% rubber waste and recycle it. We use a wide range of products to ensure that your rubber waste is handled with full compliance and using the latest environmental regulations. As GPCB authorized recyclers, we follow the entire process within the enclosed environment and prevent the release of toxic gases.",
 ];
 
+export const woodenScrapBuyer = [
+  "Recycling Hub stands as the foremost wooden scrap buyer in Ahmedabad, providing top-notch recycling services that contribute to sustainable practices and environmental preservation. With years of experience and a commitment to eco-friendly operations.",
+  "Recycling Hub has established itself as a trusted partner for individuals and businesses looking to dispose of wooden scrap responsibly.",
+];
+
 // * Service Grid
 
 export const services = [
@@ -302,6 +307,29 @@ export const rubberWasteServices = [
   },
 ];
 
+export const woodenScrapBuyerServices = [
+  {
+    title: "Reuse",
+    description:
+      "Pallets are very easy to repair and can be reused from time to time. Demolished old fences and cabins can also be reused for new projects. We are the best wooden pallets buyer in Gujarat.",
+  },
+  {
+    title: "Recycle",
+    description:
+      "When one cannot use the original form of pallet, it is sent for the recycling process, which can be used for fences, barriers, bridges, or to control erosion. We ensure appropriate recycling for each.",
+  },
+  {
+    title: "Processing bulk",
+    description:
+      "A vast amount of pallets are produced by industries. Earlier, the waste ended up in landfills which we, as wood waste recyclers, attempt to prevent.",
+  },
+  {
+    title: "Biomass",
+    description:
+      "It is one of the best energy sources that produce electricity or steam using wood. It is the best waste management solution nowadays.",
+  },
+];
+
 // * Expertise section
 
 export const expertise = [
@@ -355,6 +383,15 @@ export const rubberWasteService = [
   "Multiple Rubber Uses",
   "Transparency",
   "Inclusion",
+];
+
+export const woodenScrapBuyerService = [
+  "Conserve natural resources",
+  "Keep landfills from growing",
+  "Saves energy",
+  "Reduce green-house gas emissions",
+  "Supports job growth",
+  "Supports circular economy",
 ];
 
 // * Benefits Stepper
@@ -545,6 +582,29 @@ export const rubberWasteProcess = [
     title: "Recovery Of Materials",
     description:
       "The materials are the output of various types and dimensions based on typology in the final process. Therefore, we process it accordingly.",
+  },
+];
+
+export const woodenScrapBuyerProcess = [
+  {
+    title: "Environmental Impact",
+    description:
+      "Preventing deforestation is one of the most essential and first benefits of wood recycling. Industries must follow precisely the waste management system to avail for a better tomorrow.",
+  },
+  {
+    title: "Reduction of energy costs",
+    description:
+      "It is the best source of recycling to reduce energy costs. When products are made from solid waste, energy is expended to extract and process the materials that include burning fossil fuels.",
+  },
+  {
+    title: "Reduce risk to fire",
+    description:
+      "We find accumulated heaps of wood waste close to work premises. To prevent such circumstances, our team helps you gather wood waste and contact a professional recycling facility instead.",
+  },
+  {
+    title: "New and better opportunities",
+    description:
+      "It gives numerous opportunities that keep up with evolving customer demand for recycled products. It also includes industrial wood stock.",
   },
 ];
 
