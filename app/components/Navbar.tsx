@@ -4,6 +4,7 @@ import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavItems, PHONE_NUMBER } from "../../constants";
+import { cn } from "~/lib/utils";
 
 function AnimatedUnderline({
   isHovered,
@@ -43,6 +44,10 @@ function DropdownItem({
   const [isHovered, setIsHovered] = useState(false);
   const [isNavHovered, setIsNavHovered] = useState(false);
 
+  // consider the item disabled if it's Services (or explicitly /services)
+  const isDisabled =
+    item.href === "/services" || item.name.toLowerCase() === "services";
+
   return (
     <motion.li
       initial={{ opacity: 0, y: -10 }}
@@ -59,46 +64,100 @@ function DropdownItem({
       }}
     >
       <div className="flex items-center">
-        <NavLink
-          to={item.href || "#"}
-          className={({ isActive }) =>
-            clsx(
+        {/*
+          If disabled (Services), render a focusable non-link element.
+          Otherwise render NavLink as before.
+        */}
+        {isDisabled ? (
+          <div
+            // Keep it keyboard-focusable and role=button so it's discoverable but not navigable
+            role="button"
+            tabIndex={0}
+            aria-haspopup={!!item.children?.length}
+            aria-expanded={isHovered}
+            onFocus={() => {
+              setIsHovered(true);
+              setIsNavHovered(true);
+            }}
+            onBlur={() => {
+              setIsHovered(false);
+              setIsNavHovered(false);
+            }}
+            onKeyDown={(e) => {
+              // prevent Enter/Space from doing anything (no navigation)
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+              }
+              // allow keyboard users to open the dropdown with ArrowDown if you want:
+              // if (e.key === "ArrowDown") setIsHovered(true);
+            }}
+            onClick={(e) => {
+              // prevent any accidental navigation
+              e.preventDefault();
+            }}
+            className={clsx(
               "px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-ring/50 flex items-center gap-1 relative",
-              scrolled ? "text-white" : "text-foreground"
-            )
-          }
-        >
-          {({ isActive }) => (
-            <>
-              <motion.span
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-block relative"
-                onMouseEnter={() => setIsNavHovered(true)}
-                onMouseLeave={() => setIsNavHovered(false)}
-              >
-                {item.name}
-              </motion.span>
-              <AnimatedUnderline
-                isHovered={isNavHovered || isHovered}
-                isActive={isActive}
-                scrolled={scrolled}
-              />
-            </>
-          )}
-        </NavLink>
+              scrolled ? "text-white" : "text-foreground",
+              // indicate it's non-clickable visually (optional)
+              "cursor-default select-none"
+            )}
+          >
+            <motion.span
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block relative text-white"
+              onMouseEnter={() => setIsNavHovered(true)}
+              onMouseLeave={() => setIsNavHovered(false)}
+            >
+              {item.name}
+            </motion.span>
+            <AnimatedUnderline
+              isHovered={isNavHovered || isHovered}
+              isActive={false}
+              scrolled={scrolled}
+            />
+          </div>
+        ) : (
+          <NavLink
+            to={item.href || "#"}
+            className={({ isActive }) =>
+              clsx(
+                "px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-ring/50 flex items-center gap-1 relative",
+                scrolled ? "text-white" : "text-foreground"
+              )
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <motion.span
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-block relative"
+                  onMouseEnter={() => setIsNavHovered(true)}
+                  onMouseLeave={() => setIsNavHovered(false)}
+                >
+                  {item.name}
+                </motion.span>
+                <AnimatedUnderline
+                  isHovered={isNavHovered || isHovered}
+                  isActive={isActive}
+                  scrolled={scrolled}
+                />
+              </>
+            )}
+          </NavLink>
+        )}
+
         <motion.div
           animate={{ rotate: isHovered ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
           <FiChevronDown
-            className={clsx(
-              "transition-colors duration-200",
-              scrolled ? "text-white" : "text-foreground"
-            )}
+            className={clsx("transition-colors duration-200 text-white")}
           />
         </motion.div>
       </div>
+
       <AnimatePresence>
         {isHovered && (
           <motion.div
@@ -181,7 +240,7 @@ function NavItem({
             <motion.span
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block relative"
+              className="inline-block relative text-white"
             >
               {item.name}
             </motion.span>
@@ -217,7 +276,7 @@ export default function Navbar() {
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled
           ? "bg-brand-600/95 backdrop-blur supports-backdrop-filter:bg-brand-600/85 shadow"
-          : "bg-white"
+          : "bg-transparent"
       )}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -228,15 +287,23 @@ export default function Navbar() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex items-center gap-3"
           >
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-0">
               <motion.img
                 src="/logo.png"
                 alt="Logo"
-                className="h-16 w-auto object-contain p-1.5"
+                className="h-24 w-auto object-contain p-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               />
+              <h1
+                className={cn(
+                  "text-3xl font-bold",
+                  scrolled ? "text-white" : "text-brand-400"
+                )}
+              >
+                SV Green
+              </h1>
             </Link>
           </motion.div>
 
@@ -366,6 +433,10 @@ export default function Navbar() {
                   {NavItems.map((item, index) => {
                     const hasChildren =
                       item.children && item.children.length > 0;
+                    const isServices =
+                      item.href === "/services" ||
+                      item.name.toLowerCase() === "services";
+
                     return (
                       <motion.li
                         key={item.name}
@@ -373,9 +444,19 @@ export default function Navbar() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
                       >
+                        {/* If Services (or explicit /services) => prevent navigation on parent */}
                         <Link
                           to={item.href || "#"}
-                          onClick={() => setMobileOpen(false)}
+                          onClick={(e) => {
+                            if (isServices && hasChildren) {
+                              // Prevent navigation for Services parent; keep mobile open (or toggle if you implement)
+                              e.preventDefault();
+                              // We keep children visible by default in your current mobile UI,
+                              // so just do nothing further here.
+                              return;
+                            }
+                            setMobileOpen(false);
+                          }}
                           className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-100 transition-colors duration-150"
                         >
                           <motion.span whileHover={{ x: 5 }} className="block">

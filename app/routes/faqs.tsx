@@ -1,5 +1,5 @@
+import FAQsPage from "~/sections/faqs/page";
 import type { Route } from "./+types/faqs";
-import FAQsPage from "../../sections/faqs/page";
 
 export function meta({}: Route.MetaArgs) {
   return [

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Recycle, Shield, Heart, Award } from "lucide-react";
+import SplitText from "./react-bits/SplitText";
 
 interface Props {
   mediaSrc: string;
@@ -22,9 +22,8 @@ export function ParallaxHero({
     offset: ["start start", "end start"],
   });
 
+  // keep parallax for background only
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div ref={heroRef} className="relative h-[70vh] overflow-hidden">
@@ -48,23 +47,33 @@ export function ParallaxHero({
           />
         )}
         {/* Overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/30 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </motion.div>
 
-      {/* Content */}
-      <motion.div
-        style={{ opacity, y: contentY }}
-        className="relative h-full flex items-center justify-center z-10"
-      >
-        <div className="text-center text-white px-4">
+      {/* Content (STATIC relative to scroll) */}
+      <div className="relative h-full flex items-center justify-center z-10 pointer-events-none">
+        <div className="text-center text-white px-4 pointer-events-auto">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold mb-2"
           >
-            {title}
+            <SplitText
+              text={title}
+              delay={80}
+              duration={0.8}
+              ease="power3.out"
+              splitType="words, chars"
+              from={{ opacity: 0, y: 50, rotateX: -90 }}
+              to={{ opacity: 1, y: 0, rotateX: 0 }}
+              threshold={0.1}
+              rootMargin="0px"
+              textAlign="center"
+              className="pb-2"
+            />
           </motion.h1>
+
           {subtitle && (
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -72,11 +81,22 @@ export function ParallaxHero({
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-200"
             >
-              {subtitle}
+              <SplitText
+                text={subtitle}
+                delay={80}
+                duration={0.8}
+                ease="power3.out"
+                splitType="words, chars"
+                from={{ opacity: 0, y: 50, rotateX: -90 }}
+                to={{ opacity: 1, y: 0, rotateX: 0 }}
+                threshold={0.1}
+                rootMargin="0px"
+                textAlign="center"
+              />
             </motion.p>
           )}
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div
