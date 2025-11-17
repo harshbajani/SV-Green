@@ -36,7 +36,7 @@ export default [
       "rubber-scrap-waste-management",
       "routes/services/rubber-scrap-waste-management.tsx"
     ),
-    // route("wooden-scrap-buyer", "routes/services/wooden-scrap-buyer.tsx"),
+    route("wooden-scrap-buyer", "routes/services/wooden-scrap-buyer.tsx"),
     // route(
     //   "wooden-pallets-scrap-buyer",
     //   "routes/services/wooden-pallets-scrap-buyer.tsx"
