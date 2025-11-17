@@ -112,6 +112,11 @@ export const woodenScrapBuyer = [
   "Recycling Hub has established itself as a trusted partner for individuals and businesses looking to dispose of wooden scrap responsibly.",
 ];
 
+export const woodenPalletsScrapBuyer = [
+  "Recycling Hub has established itself as the premier wooden pallets scrap buyer in Ahmedabad. known for its commitment to sustainability and excellence in service. As a trusted name in the industry, Recycling Hub plays a pivotal role in the responsible disposal and recycling of wooden pallets, contributing to the conservation of natural resources and the reduction of environmental waste.",
+  "Wooden pallets are essential for the transportation and storage of goods across various industries. However, once they reach the end of their life cycle, they can become a significant source of waste. Recycling Hub steps in to ensure that these pallets are not discarded irresponsibly but are instead repurposed or recycled in an environmentally friendly manner.",
+];
+
 // * Service Grid
 
 export const services = [
@@ -330,6 +335,29 @@ export const woodenScrapBuyerServices = [
   },
 ];
 
+export const woodenPalletsScrapBuyerServices = [
+  {
+    title: "Reuse",
+    description:
+      "Pallets are very easy to repair and can be reused from time to time. Demolished old fences and cabins can also be reused for new projects. We are the best wooden pallets buyer in Gujarat.",
+  },
+  {
+    title: "Recycling",
+    description:
+      "When one cannot use the original form of pallet, it is sent for the recycling process, which can be used for fences, barriers, bridges, or to control erosion. We ensure appropriate recycling for each.",
+  },
+  {
+    title: "Processing bulk",
+    description:
+      "A vast amount of pallets are produced by industries. Earlier, the waste ended up in landfills which we, as wood waste recyclers, attempt to prevent.",
+  },
+  {
+    title: "Biomass",
+    description:
+      "It is one of the best energy sources that produce electricity or steam using wood. It is the best waste management solution nowadays.",
+  },
+];
+
 // * Expertise section
 
 export const expertise = [
@@ -386,6 +414,15 @@ export const rubberWasteService = [
 ];
 
 export const woodenScrapBuyerService = [
+  "Conserve natural resources",
+  "Keep landfills from growing",
+  "Saves energy",
+  "Reduce green-house gas emissions",
+  "Supports job growth",
+  "Supports circular economy",
+];
+
+export const woodenPalletsScrapBuyerService = [
   "Conserve natural resources",
   "Keep landfills from growing",
   "Saves energy",
