@@ -1,3 +1,4 @@
+import { hazardContent } from "../../../constants";
 import HazardousWastePage from "~/sections/services/hazardous-waste-management/page";
 import type { Route } from "./+types/hazardous-waste-management";
 
@@ -6,7 +7,9 @@ export function meta({}: Route.MetaArgs) {
     { title: "Hazardous Waste Management - SV Green" },
     {
       name: "description",
-      content: "Expert hazardous waste management services",
+      content:
+        hazardContent[0] ??
+        "End-to-end hazardous waste management services by SV Green.",
     },
   ];
 }
