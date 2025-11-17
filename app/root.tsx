@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollSmoothProvider from "./components/ScrollSmoothProvider";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BackToTopButton from "./components/BackToTop";
 
 gsap.registerPlugin(ScrollTrigger);
