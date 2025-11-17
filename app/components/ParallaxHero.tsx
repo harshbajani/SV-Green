@@ -1,5 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 import SplitText from "./react-bits/SplitText";
 
 interface Props {
@@ -9,26 +8,17 @@ interface Props {
   subtitle: string;
 }
 
-// Reusable Hero Component with Parallax Effect
+// Reusable Hero Component without Media Parallax
 export function ParallaxHero({
   mediaSrc,
   mediaType = "image",
   title,
   subtitle,
 }: Props) {
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-
-  // keep parallax for background only
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
   return (
-    <div ref={heroRef} className="relative h-[70vh] overflow-hidden">
-      {/* Background Media with Parallax */}
-      <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
+    <div className="relative h-[70vh] overflow-hidden">
+      {/* Background Media - STATIC, no parallax */}
+      <div className="absolute inset-0 w-full h-full">
         {mediaType === "video" ? (
           <video
             autoPlay
@@ -48,9 +38,9 @@ export function ParallaxHero({
         )}
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
-      </motion.div>
+      </div>
 
-      {/* Content (STATIC relative to scroll) */}
+      {/* Content */}
       <div className="relative h-full flex items-center justify-center z-10 pointer-events-none">
         <div className="text-center text-white px-4 pointer-events-auto">
           <motion.h1

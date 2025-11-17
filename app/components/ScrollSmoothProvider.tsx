@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef, type ReactNode } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import ScrollSmoother from "gsap/ScrollSmoother";
+import { gsap } from "gsap";
+import { ScrollTrigger, ScrollSmoother } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { setGlobalSmoother } from "../lib/utils"; // Import the global setter
 
