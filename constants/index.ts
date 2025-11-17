@@ -3,6 +3,16 @@ import { GoLaw } from "react-icons/go";
 import { RiServiceLine } from "react-icons/ri";
 import { GiTeamIdea } from "react-icons/gi";
 import { FaRecycle } from "react-icons/fa";
+import {
+  Droplets,
+  Hammer,
+  FlaskConical,
+  FileText,
+  Wine,
+  PaintBucket,
+  Shirt,
+  Package,
+} from "lucide-react";
 
 export type NavItem = {
   name: string;
@@ -670,5 +680,89 @@ export const whyRecycle = [
   {
     title: "Waste Management Solution",
     Icon: FaRecycle,
+  },
+];
+
+// * home page services
+export const homeservices = [
+  {
+    id: 1,
+    title: "Plastics & Polymers",
+    icon: Droplets,
+    description:
+      "PET, HDPE, LDPE, PP, PVC and multilayer plastics from production lines and packaging waste.",
+    color: "#588157",
+    lightColor: "#a3b18a",
+    image: "🔵",
+  },
+  {
+    id: 2,
+    title: "Metals & Iron",
+    icon: Hammer,
+    description:
+      "Ferrous and non-ferrous scrap, production offcuts, equipment dismantling and metal dust.",
+    color: "#3a5a40",
+    lightColor: "#588157",
+    image: "⚙️",
+  },
+  {
+    id: 3,
+    title: "Chemical Waste",
+    icon: FlaskConical,
+    description:
+      "Hazardous and scheduled waste streams with full PCB compliance and manifest documentation.",
+    color: "#344e41",
+    lightColor: "#3a5a40",
+    image: "⚗️",
+  },
+  {
+    id: 4,
+    title: "Paper & Cardboard",
+    icon: FileText,
+    description:
+      "Industrial kraft paper, corrugated boxes, production rejects and office paper waste.",
+    color: "#588157",
+    lightColor: "#a3b18a",
+    image: "📄",
+  },
+  {
+    id: 5,
+    title: "Glass & Empty Barrels",
+    icon: Wine,
+    description:
+      "Industrial glass, containers, drums, IBCs and bulk packaging requiring cleaning or disposal.",
+    color: "#3a5a40",
+    lightColor: "#588157",
+    image: "🫙",
+  },
+  {
+    id: 6,
+    title: "Paints & Coatings",
+    icon: PaintBucket,
+    description:
+      "Expired paints, solvents, coating residues and contaminated containers from manufacturing.",
+    color: "#344e41",
+    lightColor: "#3a5a40",
+    image: "🎨",
+  },
+  {
+    id: 7,
+    title: "Cloth & Textile Waste",
+    icon: Shirt,
+    description:
+      "Cotton waste, synthetic fibers, production offcuts and rejected fabric rolls.",
+    color: "#588157",
+    lightColor: "#a3b18a",
+    image: "🧵",
+  },
+  {
+    id: 8,
+    title: "Custom Industrial Waste",
+    icon: Package,
+    description:
+      "Bespoke solutions for rubber, wood, e-waste, batteries and other complex waste streams.",
+    color: "#3a5a40",
+    lightColor: "#588157",
+    image: "📦",
   },
 ];

@@ -1,17 +1,17 @@
+import HomePage from "~/sections/home/page";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "SV Green – Industrial Scrap & Waste Management" },
+    {
+      name: "description",
+      content:
+        "GPCB‑authorized industrial scrap and waste management partner for plastics, metals, hazardous and complex waste across Gujarat, Maharashtra and Rajasthan.",
+    },
   ];
 }
 
 export default function Home() {
-  return (
-    <>
-      <div className="min-h-screen"></div>
-      <div className="min-h-screen"></div>
-    </>
-  );
+  return <HomePage />;
 }

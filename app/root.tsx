@@ -9,9 +9,11 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ScrollSmoothProvider from "./components/ScrollSmoothProvider";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import BackToTopButton from "./components/BackToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,7 +55,9 @@ export default function App() {
       <main>
         <ScrollSmoothProvider>
           <Outlet />
+          <Footer />
         </ScrollSmoothProvider>
+        <BackToTopButton />
       </main>
     </>
   );
