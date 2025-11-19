@@ -1,101 +1,245 @@
+import { categories, faqs } from "../../../constants";
+import { ParallaxHero } from "~/components/ParallaxHero";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { FiChevronDown } from "react-icons/fi";
+import {
+  ChevronDown,
+  HelpCircle,
+  MessageCircle,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 export default function FAQsPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const faqs = [
-    {
-      question: "What types of waste do you manage?",
-      answer:
-        "We manage various types of waste including hazardous waste, plastic waste, industrial waste, e-waste, organic waste, rubber scrap, and wooden scrap. We also provide extended producer responsibility services and support circular economy initiatives.",
-    },
-    {
-      question: "How do I get started with your services?",
-      answer:
-        "Getting started is easy! Simply contact us through our contact form or call us directly. Our team will assess your needs and provide a customized waste management solution for your business.",
-    },
-    {
-      question: "Are your services compliant with environmental regulations?",
-      answer:
-        "Yes, all our services are fully compliant with local and national environmental regulations. We ensure that all waste handling, transportation, and disposal processes meet the highest environmental standards.",
-    },
-    {
-      question: "Do you provide services for residential customers?",
-      answer:
-        "Our primary focus is on businesses and industrial clients. However, we do offer some services for residential customers. Please contact us to discuss your specific needs.",
-    },
-    {
-      question: "What is Extended Producer Responsibility (EPR)?",
-      answer:
-        "Extended Producer Responsibility is an environmental policy approach where producers are given significant responsibility for the treatment or disposal of post-consumer products. We help businesses comply with EPR regulations and manage their product lifecycle responsibilities.",
-    },
-  ];
+  const filteredFaqs =
+    selectedCategory === "All"
+      ? faqs
+      : faqs.filter((faq) => faq.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+    <div className="min-h-screen bg-linear-to-b from-white via-brand-50/10 to-white">
+      <ParallaxHero
+        mediaSrc="https://images.unsplash.com/photo-1626287935075-3275d2d9025e?w=1920&q=80"
+        mediaType="image"
+        title="FAQs"
+        subtitle=""
+      />
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Category Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center"
+          className="mb-12"
         >
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
-            Frequently Asked Questions
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about our waste management services
-          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {categories.map((category) => (
+              <motion.button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all ${
+                  selectedCategory === category
+                    ? "bg-brand-600 text-white shadow-lg"
+                    : "bg-white text-gray-700 border-2 border-gray-200 hover:border-brand-200"
+                }`}
+              >
+                {category}
+              </motion.button>
+            ))}
+          </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-16 max-w-3xl mx-auto space-y-4"
-        >
-          {faqs.map((faq, index) => (
+        {/* FAQ List */}
+        <div className="grid lg:grid-cols-[2fr,1fr] gap-8">
+          {/* Questions Column */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-4"
+          >
+            <AnimatePresence mode="wait">
+              {filteredFaqs.map((faq, index) => (
+                <motion.div
+                  key={`${selectedCategory}-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  className="group"
+                >
+                  <div
+                    className={`rounded-2xl border-2 transition-all duration-300 ${
+                      openIndex === index
+                        ? "border-brand-400 bg-linear-to-br from-brand-50/30 to-white shadow-lg"
+                        : "border-gray-200 bg-white hover:border-brand-200 shadow-sm hover:shadow-md"
+                    }`}
+                  >
+                    <button
+                      onClick={() =>
+                        setOpenIndex(openIndex === index ? null : index)
+                      }
+                      className="w-full px-6 py-5 flex items-start gap-4 text-left"
+                    >
+                      {/* Question Number Badge */}
+                      <div
+                        className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold transition-colors ${
+                          openIndex === index
+                            ? "bg-brand-600 text-white"
+                            : "bg-gray-100 text-gray-600 group-hover:bg-brand-200 group-hover:text-white"
+                        }`}
+                      >
+                        {index + 1}
+                      </div>
+
+                      <div className="flex-1">
+                        {/* Category Tag */}
+                        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-200/20 text-brand-600 mb-2">
+                          {faq.category}
+                        </span>
+                        <h3 className="text-lg font-bold text-gray-900 mb-1">
+                          {faq.question}
+                        </h3>
+                      </div>
+
+                      {/* Chevron Icon */}
+                      <motion.div
+                        animate={{ rotate: openIndex === index ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="shrink-0 mt-1"
+                      >
+                        <ChevronDown
+                          className={`w-6 h-6 transition-colors ${
+                            openIndex === index
+                              ? "text-brand-600"
+                              : "text-gray-400"
+                          }`}
+                        />
+                      </motion.div>
+                    </button>
+
+                    {/* Answer */}
+                    <AnimatePresence>
+                      {openIndex === index && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-5 pl-18">
+                            <p className="text-gray-700 leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+
+            {filteredFaqs.length === 0 && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-center py-12 text-gray-500"
+              >
+                No questions found in this category.
+              </motion.div>
+            )}
+          </motion.div>
+
+          {/* Contact Card - Sticky Sidebar */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="lg:sticky lg:top-24 h-fit"
+          >
+            <div className="rounded-2xl bg-linear-to-br from-brand-600 to-brand-800 text-white p-8 shadow-xl">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Still have questions?</h3>
+                  <p className="text-sm text-brand-50">We're here to help</p>
+                </div>
+              </div>
+
+              <p className="text-brand-50 mb-6 text-sm leading-relaxed">
+                Can't find the answer you're looking for? Our team is ready to
+                assist you with any questions about our services.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <a
+                  href="mailto:shyam.bhannushali@gmail.com"
+                  className="flex items-center gap-3 p-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors group"
+                >
+                  <Mail className="w-5 h-5 text-brand-200" />
+                  <div>
+                    <p className="text-xs text-brand-50">Email us</p>
+                    <p className="text-sm font-semibold">
+                      shyam.bhannushali@gmail.com
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:+919000000000"
+                  className="flex items-center gap-3 p-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors group"
+                >
+                  <Phone className="w-5 h-5 text-brand-200" />
+                  <div>
+                    <p className="text-xs text-brand-50">Call us</p>
+                    <p className="text-sm font-semibold">+91 90000 00000</p>
+                  </div>
+                </a>
+              </div>
+
+              <motion.a
+                href="/contact-us"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="block w-full text-center px-6 py-3 rounded-xl bg-white text-brand-600 font-semibold shadow-lg hover:shadow-xl transition-shadow"
+              >
+                Get in Touch
+              </motion.a>
+            </div>
+
+            {/* Trust Badge */}
             <motion.div
-              key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="rounded-lg border border-gray-200 bg-white shadow-sm"
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="mt-6 p-6 rounded-2xl bg-white border-2 border-brand-50 shadow-sm"
             >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">
-                  {faq.question}
-                </span>
-                <motion.div
-                  animate={{
-                    rotate: openIndex === index ? 180 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <FiChevronDown className="h-5 w-5 text-gray-500" />
-                </motion.div>
-              </button>
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="px-6 pb-4 overflow-hidden"
-                  >
-                    <p className="text-gray-600">{faq.answer}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-200/20 mb-3">
+                  <HelpCircle className="w-6 h-6 text-brand-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">
+                  GPCB Authorized
+                </h4>
+                <p className="text-sm text-gray-600">
+                  27+ years of trusted service with full compliance and
+                  documentation
+                </p>
+              </div>
             </motion.div>
-          ))}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
