@@ -758,3 +758,111 @@ export const homeservices = [
     lightColor: "#588157",
   },
 ];
+
+export const categories = [
+  "All",
+  "Services",
+  "Compliance",
+  "Operations",
+  "About Us",
+];
+
+export const faqs = [
+  {
+    question: "What types of waste do you manage?",
+    answer:
+      "We manage various types of waste including hazardous waste, plastic waste, industrial waste, e-waste, organic waste, rubber scrap, and wooden scrap. We also provide extended producer responsibility services and support circular economy initiatives.",
+    category: "Services",
+  },
+  {
+    question: "How do I get started with your services?",
+    answer:
+      "Getting started is easy! Simply contact us through our contact form or call us directly. Our team will assess your needs and provide a customized waste management solution for your business.",
+    category: "Getting Started",
+  },
+  {
+    question: "Are your services compliant with environmental regulations?",
+    answer:
+      "Yes, all our services are fully compliant with local and national environmental regulations. We ensure that all waste handling, transportation, and disposal processes meet the highest environmental standards.",
+    category: "Compliance",
+  },
+  {
+    question: "Do you provide services for residential customers?",
+    answer:
+      "Our primary focus is on businesses and industrial clients. However, we do offer some services for residential customers. Please contact us to discuss your specific needs.",
+    category: "Services",
+  },
+  {
+    question: "What is Extended Producer Responsibility (EPR)?",
+    answer:
+      "Extended Producer Responsibility is an environmental policy approach where producers are given significant responsibility for the treatment or disposal of post-consumer products. We help businesses comply with EPR regulations and manage their product lifecycle responsibilities.",
+    category: "Compliance",
+  },
+  {
+    question: "Do You Also Collect Waste From The Household?",
+    answer: "No, currently we are limited to the bulk waste generators only.",
+    category: "Services",
+  },
+  {
+    question: "How do you serve the larger cause of waste management?",
+    answer:
+      "While ensure safe recycling of all types of waste materials, we also ensure to create massive awareness among the common public regarding the waste segregation and recycling. Our team keeps on conducting multiple IEC activities every month to strengthen our core values.",
+    category: "About Us",
+  },
+  {
+    question:
+      "Do you accept online manifest for collection of hazardous waste?",
+    answer: "Yes, we accept online manifest for all types of hazardous waste",
+    category: "Operations",
+  },
+  {
+    question:
+      "Do you use any technology to track and monitor the movement of waste and end of life cycle?",
+    answer:
+      "Yes, we have our own ERP, which tracks all the details meticulously so that we can present all the data as and when needed.",
+    category: "Operations",
+  },
+  {
+    question: "Are your vehicles GPS enabled?",
+    answer:
+      "Yes, all our vehicles are AIS-140 certified GPS enabled vehicles. We also ensure 100% hazardous waste movements are done with GPS mounted vehicles only.",
+    category: "Operations",
+  },
+  {
+    question: "Do you also help in meeting our EPR goals?",
+    answer:
+      "Yes, we are helping brand owners and producers in meeting their EPR goals. We are an SBM approved EPR agency.",
+    category: "Compliance",
+  },
+  {
+    question:
+      "Do you have PWM registration certificate for recycling plastic waste?",
+    answer:
+      "Yes, since we are a pollution control board-approved plastic waste recycler, we own the PWM registration certificate. We also ensure our clients get manifest for the disposal of plastic waste.",
+    category: "Compliance",
+  },
+  {
+    question: "Are you a recycler or a scrap trader?",
+    answer:
+      "We are a GPCB authorized recycler and a leading waste management company in India. We ensure 100% of the scrap materials get diverted towards recycling only.",
+    category: "About Us",
+  },
+  {
+    question: `Why should I change from local scrap vendor to "Recycling Hub?`,
+    answer:
+      "If 100% Compliance, Excellent service and environmental support are essential parameters for your organization then you should choose Recycling Hub.",
+    category: "About Us",
+  },
+  {
+    question: "Which all location you serve?",
+    answer:
+      "We are serving the bulk waste generators across Gujarat, Rajasthan, Maharashtra and in few other major industrial areas across India.",
+    category: "Services",
+  },
+  {
+    question: "Do you buy all types of industrial waste?",
+    answer:
+      "Yes, we buy all kinds of industrial waste which are recyclable. It includes all types of plastic scrap, paper scrap, wooden scrap, metal scrap, hazardous waste for decontamination, used oil for re-refining, E-waste for recycling, etc.",
+    category: "Services",
+  },
+];
