@@ -129,10 +129,9 @@ export default function BackToTopButton() {
 
       {/* Scroll Progress Indicator */}
       <div
-        className="fixed top-0 left-0 h-1 transition-all duration-300"
+        className="fixed top-0 left-0 h-1 bg-brand-200 transition-all duration-300"
         style={{
           width: `${scrollProgress}%`,
-          backgroundColor: "#588157",
           zIndex: 9999,
         }}
       />
