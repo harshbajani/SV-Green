@@ -65,7 +65,7 @@ export const NavItems: NavItem[] = [
       },
     ],
   },
-  { name: "Blog", href: "/blog" },
+  { name: "Industries We Serve", href: "/industries-we-serve" },
   { name: "FAQs", href: "/faqs" },
   { name: "Contact us", href: "/contact-us" },
 ];

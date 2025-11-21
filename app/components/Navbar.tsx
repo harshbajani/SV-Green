@@ -350,7 +350,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
-            <FiMenu className="h-6 w-6" />
+            <FiMenu className="h-6 w-6 text-white" />
           </motion.button>
         </div>
       </nav>
@@ -381,19 +381,6 @@ export default function Navbar() {
               className="absolute inset-y-0 right-0 w-80 max-w-[90%] bg-white shadow-xl p-4 flex flex-col"
             >
               <div className="flex items-center justify-between">
-                <Link
-                  to="/"
-                  className="flex items-center gap-2"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  <motion.img
-                    src="/logo.jpg"
-                    alt="Logo"
-                    className="h-8 w-auto object-contain"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  />
-                </Link>
                 <motion.button
                   type="button"
                   whileHover={{ scale: 1.1, rotate: 90 }}
