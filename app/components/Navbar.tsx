@@ -291,19 +291,11 @@ export default function Navbar() {
               <motion.img
                 src="/logo.png"
                 alt="Logo"
-                className="h-24 w-auto object-contain p-2"
+                className="h-24 w-auto object-contain p-2 bg-white"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               />
-              <h1
-                className={cn(
-                  "text-3xl font-bold",
-                  scrolled ? "text-white" : "text-brand-400"
-                )}
-              >
-                SV Green
-              </h1>
             </Link>
           </motion.div>
 
