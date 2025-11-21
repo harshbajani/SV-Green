@@ -19,7 +19,7 @@ function AnimatedUnderline({
     <motion.div
       className={clsx(
         "absolute bottom-1 left-0 right-0 h-0.5 origin-left",
-        scrolled ? "bg-white" : "bg-brand-600"
+        scrolled ? "bg-white" : "bg-brand-200"
       )}
       initial={{ scaleX: isActive ? 1 : 0 }}
       animate={{ scaleX: isActive ? 1 : isHovered ? 1 : 0 }}
@@ -334,21 +334,6 @@ export default function Navbar() {
                 );
               })}
             </ul>
-            {PHONE_NUMBER && (
-              <motion.a
-                href={`tel:${PHONE_NUMBER}`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={clsx(
-                  "ml-3 inline-flex items-center rounded-md px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring/50 transition-colors duration-200",
-                  scrolled
-                    ? "bg-white text-brand-800 hover:bg-gray-100"
-                    : "bg-brand-600 text-white hover:bg-brand-600/90"
-                )}
-              >
-                Call us
-              </motion.a>
-            )}
           </motion.div>
 
           {/* Mobile hamburger */}
