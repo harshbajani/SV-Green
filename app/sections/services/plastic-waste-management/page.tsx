@@ -11,6 +11,7 @@ import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { ContentWithImage } from "~/components/ContentWithImage";
+import IndustriesServed from "~/components/IndustryServed";
 
 const PlasticWasteManagementPage = () => {
   return (
@@ -52,6 +53,7 @@ const PlasticWasteManagementPage = () => {
         alt="Plastic Waste Management"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

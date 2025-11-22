@@ -11,6 +11,7 @@ import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { ContentWithImage } from "~/components/ContentWithImage";
+import IndustriesServed from "~/components/IndustryServed";
 
 const HazardousWastePage = () => {
   return (
@@ -57,6 +58,7 @@ const HazardousWastePage = () => {
         alt="Hazardous Waste"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

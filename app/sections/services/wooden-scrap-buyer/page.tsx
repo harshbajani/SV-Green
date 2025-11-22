@@ -11,6 +11,7 @@ import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { ParallaxHero } from "~/components/ParallaxHero";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const WoodenScrapBuyerPage = () => {
   return (
@@ -52,6 +53,7 @@ const WoodenScrapBuyerPage = () => {
         alt="Wooden Scrap Buyer"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };
