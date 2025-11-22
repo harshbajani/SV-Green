@@ -72,6 +72,7 @@ export const NavItems: NavItem[] = [
       },
     ],
   },
+  { name: "Clients", href: "/clients" },
   { name: "Industries We Serve", href: "/industries-we-serve" },
   { name: "FAQs", href: "/faqs" },
   { name: "Contact us", href: "/contact-us" },
