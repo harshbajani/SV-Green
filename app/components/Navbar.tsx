@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
-import { NavItems, PHONE_NUMBER } from "../../constants";
+import { NavItems } from "../../constants";
 import { cn } from "~/lib/utils";
 
 function AnimatedUnderline({
@@ -465,19 +465,6 @@ export default function Navbar() {
                   })}
                 </ul>
               </nav>
-              {PHONE_NUMBER && (
-                <motion.a
-                  href={`tel:${PHONE_NUMBER}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.2 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-auto inline-flex items-center justify-center rounded-md bg-brand-600 text-white px-3 py-2 text-sm font-medium hover:bg-brand-600/90 transition-colors duration-200"
-                >
-                  Call us
-                </motion.a>
-              )}
             </motion.aside>
           </motion.div>
         )}
