@@ -33,7 +33,7 @@ const RubberScrapWasteManagementPage = () => {
         src="/rubber-waste.png"
         alt="Rubber Waste"
         title="Why recycle rubber waste?"
-        description="The problem of managing rubber waste is becoming essential in today’s time. Recycling Hub is India’s best waste management company that focuses on sustainable practices for every type of industrial waste."
+        description="The problem of managing rubber waste is becoming essential in today’s time. SV Green is India’s best waste management company that focuses on sustainable practices for every type of industrial waste."
       />
       <ExpertiseSection
         title="Benefits Of Our Rubber Waste Management Services"

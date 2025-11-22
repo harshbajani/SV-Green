@@ -36,7 +36,7 @@ const CircularEconomyPage = () => {
         description="Is waste management a bottleneck of your business? Fret not; SV Green is a comprehensive industrial waste recycling company in Ahmedabad that will solve all your waste management hurdles so you can be relieved. Our Cicrular Economy waste management services include:"
       />
       <ExpertiseSection
-        title="Why Choose Recycling Hub For Circular Economy Waste Management?"
+        title="Why Choose SV Green For Circular Economy Waste Management?"
         item={circularEconomyService}
         src="/ce.jpg"
         alt="Circular Economy"
