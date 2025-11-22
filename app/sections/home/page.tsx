@@ -265,17 +265,17 @@ function AdvantageSection() {
     {
       icon: BadgeCheck,
       title: "GPCB Authorized & Compliant",
-      text: "End‑to‑end documentation, manifests and certificates aligned with PCB norms.",
+      text: "End-to-end documentation, manifests and certificates aligned with PCB norms.",
     },
     {
       icon: Truck,
-      title: "Pan‑Region Logistics",
+      title: "Pan-Region Logistics",
       text: "Strategic presence across Vapi, Ankleshwar, Ahmedabad, Jaipur and Mumbai.",
     },
     {
       icon: Handshake,
       title: "Flexible Commercials",
-      text: "Transparent terms with flexible security deposits and long‑term partnerships.",
+      text: "Transparent terms with flexible security deposits and long-term partnerships.",
     },
   ];
 
@@ -299,7 +299,7 @@ function AdvantageSection() {
             </span>
           </h2>
           <p className="mt-4 text-gray-600">
-            We combine strong on‑ground operations with compliant documentation
+            We combine strong on-ground operations with compliant documentation
             and transparent commercial structures to help you meet ESG and PCB
             expectations without slowing down your core business.
           </p>
@@ -358,7 +358,7 @@ function ValuesSection() {
     {
       icon: Truck,
       label: "Operational Efficiency",
-      text: "Optimized routing and on‑site processes to minimize disruption.",
+      text: "Optimized routing and on-site processes to minimize disruption.",
     },
   ];
 
@@ -375,7 +375,7 @@ function ValuesSection() {
             Our Values
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-800 mb-3">
-            Built on trust, compliance and long‑term partnerships.
+            Built on trust, compliance and long-term partnerships.
           </h2>
           <p className="text-gray-600 text-sm md:text-base">
             SV Green is driven by ethics and impact—supporting your ESG goals
@@ -424,7 +424,7 @@ function ProcessSection() {
     {
       title: "Compliant Execution",
       description:
-        "Our on‑ground teams execute safe handling, logistics and processing per PCB norms.",
+        "Our on-ground teams execute safe handling, logistics and processing per PCB norms.",
     },
     {
       title: "Transparent Documentation",
@@ -433,7 +433,7 @@ function ProcessSection() {
     },
   ];
 
-  return <BenefitsStepper item={steps} title="Our Proven 4‑Step Process" />;
+  return <BenefitsStepper item={steps} title="Our Proven 4-Step Process" />;
 }
 
 function ServiceAreas() {
@@ -473,7 +473,7 @@ function ServiceAreas() {
           </h2>
           <p className="text-sm md:text-base text-brand-50/80">
             Our hubs in Gujarat, Maharashtra and Rajasthan give us the ability
-            to support multi‑plant enterprises with consistent service quality
+            to support multi-plant enterprises with consistent service quality
             and centralized reporting.
           </p>
         </motion.div>
@@ -607,7 +607,7 @@ function ImpactSection() {
             </div>
             <div>
               <p className="text-xs uppercase tracking-wide text-brand-400">
-                ESG‑aligned reporting
+                ESG-aligned reporting
               </p>
               <p className="text-sm font-semibold text-brand-800">
                 Quarterly environmental impact snapshots
@@ -615,12 +615,12 @@ function ImpactSection() {
             </div>
           </div>
           <p className="text-sm text-gray-700 mb-4">
-            Get easy‑to‑use numbers for sustainability reporting: emissions
+            Get easy-to-use numbers for sustainability reporting: emissions
             prevented, waste diverted from landfills and livelihoods supported.
           </p>
           <ul className="space-y-2 text-xs text-gray-600">
             <li>• Ready for ESG and CSR reporting decks</li>
-            <li>• PCB‑compliant manifests and certificates</li>
+            <li>• PCB-compliant manifests and certificates</li>
             <li>• Easy integration with your internal MIS</li>
           </ul>
         </motion.div>
@@ -646,7 +646,7 @@ function VisionMission() {
           <p className="text-sm md:text-base text-gray-700">
             To be India&apos;s most trusted industrial scrap and waste
             management partner—enabling every manufacturing facility to operate
-            with zero‑landfill ambition and full regulatory peace of mind.
+            with zero-landfill ambition and full regulatory peace of mind.
           </p>
         </motion.div>
 
@@ -683,7 +683,7 @@ function CTASection() {
         </h2>
         <p className="text-sm md:text-base text-brand-50/80 max-w-2xl mx-auto">
           Share your waste profile and locations and we&apos;ll come back with a
-          compliant, commercially viable proposal within 24–48 hours.
+          compliant, commercially viable proposal within 24-48 hours.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <motion.a
