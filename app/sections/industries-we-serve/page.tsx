@@ -1,6 +1,7 @@
 import { industries } from "../../../constants";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ClientMarqueeCSSVersion } from "~/components/ClientMarquee";
 import { ParallaxHero } from "~/components/ParallaxHero";
 
 function IndustryCard({
@@ -342,6 +343,7 @@ export default function IndustriesWeServePage() {
       />
 
       <IndustriesGrid />
+      <ClientMarqueeCSSVersion />
       <WhyPartnerSection />
       <ProcessOverview />
       <CTASection />
