@@ -12,6 +12,7 @@ import { ServicesGrid } from "~/components/ServicesGrid";
 import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const ExtendedProducerResponsibilityPage = ({ reverse = false }) => {
   const ref = useRef<HTMLElement>(null);
@@ -145,6 +146,7 @@ const ExtendedProducerResponsibilityPage = ({ reverse = false }) => {
         alt="Electronic Waste"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

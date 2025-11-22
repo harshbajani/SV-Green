@@ -9,6 +9,7 @@ import { ContentWithImage } from "~/components/ContentWithImage";
 import { ParallaxHero } from "~/components/ParallaxHero";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const OrganicWasteManagementPage = () => {
   return (
@@ -44,6 +45,7 @@ const OrganicWasteManagementPage = () => {
         alt="Organic Waste"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

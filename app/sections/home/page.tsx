@@ -17,6 +17,7 @@ import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { homeservices } from "../../../constants";
 import { cn } from "~/lib/utils";
 import { ClientMarqueeCSSVersion } from "~/components/ClientMarquee";
+import IndustriesServed from "~/components/IndustryServed";
 
 interface ServiceProps {
   service: (typeof homeservices)[number];
@@ -755,6 +756,7 @@ export default function HomePage() {
       <ServicesOverview />
       <AdvantageSection />
       <ValuesSection />
+      <IndustriesServed />
       <ProcessSection />
       <ServiceAreas />
       <VisionMission />

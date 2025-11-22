@@ -11,6 +11,7 @@ import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { ParallaxHero } from "~/components/ParallaxHero";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const IndustrialWasteManagementPage = () => {
   return (
@@ -52,6 +53,7 @@ const IndustrialWasteManagementPage = () => {
         alt="Industrial Waste"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

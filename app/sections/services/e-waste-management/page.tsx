@@ -12,6 +12,7 @@ import ScrollFloat from "~/components/react-bits/ScrollFloat";
 import { useRef } from "react";
 import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const EWasteManagementPage = () => {
   const ref = useRef<HTMLElement>(null);
@@ -340,6 +341,7 @@ const EWasteManagementPage = () => {
         alt="electronic Waste"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };

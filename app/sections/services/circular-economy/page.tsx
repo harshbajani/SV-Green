@@ -11,6 +11,7 @@ import { ServicesGrid } from "~/components/ServicesGrid";
 import { ExpertiseSection } from "~/components/ExpertiseSection";
 import { BenefitsStepper } from "~/components/BenefitsStepper";
 import { RecycleHub } from "~/components/RecycleHub";
+import IndustriesServed from "~/components/IndustryServed";
 
 const CircularEconomyPage = () => {
   return (
@@ -52,6 +53,7 @@ const CircularEconomyPage = () => {
         alt="Circular Economy"
         item={whyRecycle}
       />
+      <IndustriesServed />
     </div>
   );
 };
