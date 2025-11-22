@@ -12,6 +12,18 @@ import {
   PaintBucket,
   Shirt,
   Package,
+  Factory,
+  Pill,
+  Paintbrush,
+  Zap,
+  Car,
+  PackageOpen,
+  Building2,
+  Wheat,
+  Laptop,
+  ArrowRight,
+  CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 
 export type NavItem = {
@@ -495,7 +507,7 @@ export const PlasticWasteProcess = [
   {
     title: "Recycling",
     description:
-      "Plastic waste comes in different sizes and shapes. Using a machine like a crusher and a shredder, we reduce the materials’ size and make them suitable for recycling processes. As a leading waste management company, we ensure to provide a smooth and constant flow of the plastic waste management cycle. ",
+      "Plastic waste comes in different sizes and shapes. Using a machine like a crusher and a shredder, we reduce the materials's size and make them suitable for recycling processes. As a leading waste management company, we ensure to provide a smooth and constant flow of the plastic waste management cycle. ",
   },
 ];
 
@@ -864,5 +876,176 @@ export const faqs = [
     answer:
       "Yes, we buy all kinds of industrial waste which are recyclable. It includes all types of plastic scrap, paper scrap, wooden scrap, metal scrap, hazardous waste for decontamination, used oil for re-refining, E-waste for recycling, etc.",
     category: "Services",
+  },
+];
+
+export const industries = [
+  {
+    icon: Pill,
+    title: "Pharmaceutical & Healthcare",
+    description:
+      "Comprehensive waste management for expired medicines, lab waste, hazardous chemicals, and packaging materials with strict PCB compliance.",
+    services: [
+      "Hazardous chemical waste disposal",
+      "Expired medication recycling",
+      "Laboratory waste management",
+      "Medical packaging waste",
+    ],
+    color: "#588157",
+    lightColor: "#a3b18a",
+  },
+  {
+    icon: Shirt,
+    title: "Textile & Garment",
+    description:
+      "Cotton waste, synthetic fibers, fabric offcuts, dye waste and packaging materials recycled responsibly with zero-landfill commitment.",
+    services: [
+      "Fabric scraps & offcuts",
+      "Cotton & synthetic waste",
+      "Dye & chemical waste",
+      "Packaging materials",
+    ],
+    color: "#3a5a40",
+    lightColor: "#588157",
+  },
+  {
+    icon: Paintbrush,
+    title: "Paint & Coating",
+    description:
+      "Safe handling of expired paints, solvents, coating residues, contaminated containers and hazardous waste streams.",
+    services: [
+      "Expired paint disposal",
+      "Solvent recycling",
+      "Coating residue management",
+      "Contaminated drum cleaning",
+    ],
+    color: "#344e41",
+    lightColor: "#3a5a40",
+  },
+  {
+    icon: Zap,
+    title: "Electronics & Electrical",
+    description:
+      "E-waste recycling, component recovery, battery disposal and dismantling services for manufacturing units and assembly plants.",
+    services: [
+      "E-waste recycling",
+      "Battery disposal",
+      "Component recovery",
+      "Production line waste",
+    ],
+    color: "#588157",
+    lightColor: "#a3b18a",
+  },
+  {
+    icon: Car,
+    title: "Automotive & Manufacturing",
+    description:
+      "Metal scrap, rubber waste, production offcuts, oil & lubricant disposal with optimized logistics for high-volume generators.",
+    services: [
+      "Metal scrap recycling",
+      "Rubber & tyre waste",
+      "Used oil re-refining",
+      "Production line scrap",
+    ],
+    color: "#3a5a40",
+    lightColor: "#588157",
+  },
+  {
+    icon: PackageOpen,
+    title: "FMCG & Packaging",
+    description:
+      "Plastic packaging, multilayer plastics, EPR compliance, cardboard waste and bulk material handling for production facilities.",
+    services: [
+      "Plastic packaging waste",
+      "EPR compliance support",
+      "Cardboard & paper waste",
+      "Production rejects",
+    ],
+    color: "#344e41",
+    lightColor: "#3a5a40",
+  },
+  {
+    icon: Wine,
+    title: "Food & Beverage",
+    description:
+      "Organic waste composting, glass & bottle recycling, packaging materials and industrial kitchen waste management solutions.",
+    services: [
+      "Organic waste composting",
+      "Glass & bottle recycling",
+      "Food packaging waste",
+      "Industrial kitchen waste",
+    ],
+    color: "#588157",
+    lightColor: "#a3b18a",
+  },
+  {
+    icon: FlaskConical,
+    title: "Chemical & Petrochemical",
+    description:
+      "Hazardous chemical disposal, contaminated materials, scheduled waste management and full manifest documentation.",
+    services: [
+      "Hazardous chemical waste",
+      "Contaminated materials",
+      "Scheduled waste handling",
+      "Drum & IBC cleaning",
+    ],
+    color: "#3a5a40",
+    lightColor: "#588157",
+  },
+  {
+    icon: Factory,
+    title: "Steel & Metal Processing",
+    description:
+      "Ferrous & non-ferrous scrap, metal dust, slag, production offcuts and equipment dismantling with competitive pricing.",
+    services: [
+      "Metal scrap buying",
+      "Production offcuts",
+      "Metal dust & slag",
+      "Equipment dismantling",
+    ],
+    color: "#344e41",
+    lightColor: "#3a5a40",
+  },
+  {
+    icon: Building2,
+    title: "Construction & Infrastructure",
+    description:
+      "Wooden pallets, construction debris, metal structures, plastic waste and bulk demolition waste recycling.",
+    services: [
+      "Wooden pallet recycling",
+      "Construction debris",
+      "Metal structure scrap",
+      "Bulk waste handling",
+    ],
+    color: "#588157",
+    lightColor: "#a3b18a",
+  },
+  {
+    icon: Wheat,
+    title: "Agriculture & Agro-Processing",
+    description:
+      "Organic waste composting, plastic mulch, agricultural packaging, wooden crates and farm waste management.",
+    services: [
+      "Organic waste recycling",
+      "Plastic mulch disposal",
+      "Agricultural packaging",
+      "Wooden crate buying",
+    ],
+    color: "#3a5a40",
+    lightColor: "#588157",
+  },
+  {
+    icon: Laptop,
+    title: "IT & Technology Parks",
+    description:
+      "E-waste from offices, battery disposal, paper & cardboard recycling, and comprehensive waste audit services.",
+    services: [
+      "Office e-waste recycling",
+      "Battery disposal",
+      "Paper waste management",
+      "Waste audits & consulting",
+    ],
+    color: "#344e41",
+    lightColor: "#3a5a40",
   },
 ];
