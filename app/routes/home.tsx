@@ -1,15 +1,13 @@
 import HomePage from "~/sections/home/page";
 import type { Route } from "./+types/home";
+import { generateMetaTags } from "~/lib/seo";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "SV Green – Industrial Scrap & Waste Management" },
-    {
-      name: "description",
-      content:
-        "GPCB‑authorized industrial scrap and waste management partner for plastics, metals, hazardous and complex waste across Gujarat, Maharashtra and Rajasthan.",
-    },
-  ];
+  return generateMetaTags({
+    title: "SV Green - Leading Industrial Scrap & Waste Management Services",
+    description: "GPCB-authorized industrial scrap and waste management partner specializing in plastics, metals, hazardous and complex waste management across Gujarat, Maharashtra and Rajasthan.",
+    url: "https://sv-green.vercel.app",
+  });
 }
 
 export default function Home() {

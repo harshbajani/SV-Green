@@ -1,0 +1,40 @@
+# robots.txt for SV Green
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sv-green.vercel.app/sitemap.xml
+
+# Disallow admin and private directories
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all other pages
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+
+# Crawl-delay: 10
+
+# Additional directives for search engines
+Host: https://sv-green.vercel.app
+
+# Block specific files
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow media files
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Allow CSS and JS
+Allow: /*.css$
+Allow: /*.js$
+
+# Block search queries and sessions
+Disallow: /*?*
